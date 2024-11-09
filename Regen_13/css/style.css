@@ -1,5 +1,6 @@
 
 body {
+  font-family: IBM Plex Sans;
    margin: 0;
    display: block;
    background-color: white;
@@ -31,15 +32,46 @@ body {
  }
 
 .modul1 {
-   background-color: rgba(255, 255, 255, 1);
-   height: 80vh;
-   padding: 20vh;
+  background-color: rgba(255, 255, 255, 1);
+  height: 80vh;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.ctaBox {
+  background-color: rgba(217, 217, 217, 1);
+  width: 1445px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: 23%; /* 2/5 from the top */
+}
+
+.scanButton {
+  border-radius: 63px;
+  border-style: none;
+  width: 120px;
+  height: 45px;
+  margin: 0;
+}
+
+.designButton {
+  width: 220px;
+  height: 48px;
+  border-radius: 63px;
+  border-style: none;
+  }
+
+.designButton h3{
+  font-weight: 800;
+  margin: 0;
 }
 
 .modeller{
   display: flex;
   flex-direction: column; /* Ändrar riktningen till vertikal */
-   height: 60vh;
+   height: 80vh;
    background-color: rgba(146, 20, 20, 0.86);
    padding: 10px;
 }
@@ -48,6 +80,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 4em;
+
 }
 
 .carousel {
