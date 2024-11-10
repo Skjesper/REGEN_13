@@ -1,0 +1,191 @@
+
+body {
+  font-family: IBM Plex Sans;
+   margin: 0;
+   display: block;
+   background-color: white;
+ }
+
+ header {
+   position: fixed;
+   display: flex;
+   justify-content: space-between; /* Fördelar utrymmet jämnt mellan divarna */
+   align-items: center; /* Justerar vertikalt */
+   padding: 10px; /* Valfri marginal */
+   background-color: rgba(106, 106, 106, 0.86);
+   width: 100%;
+ }
+
+
+
+ .middleNav ul {
+   list-style-type: none;
+   display: flex;
+   gap: 20px;
+
+ }
+
+ .hero {
+   background-color: rgba(217, 217, 217, 1);
+   height: 100vh;
+   width: 100vw;
+ }
+
+.cta {
+  background-color: rgba(255, 255, 255, 1);
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.ctaBox {
+  background-color: rgba(217, 217, 217, 1);
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 23%; /* 2/5 from the top */
+}
+
+.scanButton {
+  border-radius: 63px;
+  border-style: none;
+  width: 120px;
+  height: 45px;
+  margin: 0;
+}
+
+.designButton {
+  width: 220px;
+  height: 48px;
+  border-radius: 63px;
+  border-style: none;
+  }
+
+.designButton h3{
+  font-weight: 800;
+  margin: 0;
+}
+
+.modeller{
+  display: flex;
+  flex-direction: column; /* Ändrar riktningen till vertikal */
+   height: 80vh;
+   background-color: rgba(146, 20, 20, 0.86);
+   padding: 10px;
+}
+
+.modeller h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+
+}
+
+.modul4 {
+  background-color: rgba(169, 161, 161, 1);
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-countainer {
+  
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+}
+
+.carousel__button--left {
+  left: -30px;
+}
+
+.carousel__button--right {
+  right: -30px;
+}
+.carousel__button img {
+  width: 19px;
+
+}
+
+.carousel__nav {
+  
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, .3);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.is-hidden {
+  display: none;
+}
+
+.slider {
+  background-color: rgba(217, 217, 217, 1);
+  height: 80vh;
+}
+
+.newsLetter {
+  background-color: white;
+  height: 80vh;
+}
+
+footer {
+  background-color: rgba(182, 179, 179, 1);
+  height: 50vh;
+}
