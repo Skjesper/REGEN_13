@@ -13,7 +13,8 @@ body {
    align-items: center; /* Justerar vertikalt */
    padding: 10px; /* Valfri marginal */
    background-color: rgba(106, 106, 106, 0.86);
-   width: 100%;
+   width: 100vw;
+   z-index: 1000;
  }
 
 
@@ -73,7 +74,6 @@ body {
   flex-direction: column; /* Ändrar riktningen till vertikal */
    height: 80vh;
    background-color: rgba(146, 20, 20, 0.86);
-   padding: 10px;
 }
 
 .modeller h2 {
