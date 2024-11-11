@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box; /* Det finns inte i huvud-css-filen, eller hur? Utan border-box uppför sig inte högermarginalen... */
+  margin: 0;
+  padding: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -14,6 +20,7 @@ body {
 
  header {
    width: 100vw;
+   height: 3rem;
    position: fixed;
    display: flex;
    justify-content: space-between; /* Fördelar utrymmet jämnt mellan divarna */
@@ -22,6 +29,13 @@ body {
    z-index: 1000;
  }
 
+ .wrapper {
+  outline: 3px solid red;
+  margin-inline: auto;
+  width: min(1440px, 100% - 4rem);
+  padding-top: 3rem;
+  
+ }
 
 
  .leftNav {
@@ -41,24 +55,58 @@ body {
 
  .hero {
    background-color: rgba(217, 217, 217, 1);
-   min-height: 80vh;
+   height: 80vh;
  }
 
-.cta {
-  background-color: rgba(255, 255, 255, 1);
-  height: 100vh;
+ .sofaHero {
+  object-fit: cover;
+  height: 80vh;
+  width: auto;
+ }
+
+ .heroTextBlock {
   display: flex;
-  justify-content: flex-end;
-  position: relative;
+  flex-direction: column; /* Ordnar elementen vertikalt */
+  gap: 5px; /* Skapar avstånd mellan elementen */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Aligns the text perfectly in the center */
+  width: auto;
+  color: white;
+ }
+
+ .designButton {
+  width: 210px;
+  height: 40px;
+  border-radius: 40px;
+  border-style: none;
+  }
+
+.designButton h3{
+  font-weight: 800;
+  margin: 0;
+  font-size: 1rem;
 }
 
 .ctaBox {
-  background-color: rgba(217, 217, 217, 1);
-  width: 50%;
+  display: flex;
+  flex-direction: column; /* Ordnar elementen vertikalt */
+  gap: 5px;
+}
+
+.ctaImg {
+  max-width: 300px;
   height: auto;
-  position: absolute;
-  right: 0;
-  top: 23%; /* 2/5 from the top */
+  object-fit: contain;
+
+}
+
+@media (max-width: 768px) {
+  .ctaImg {
+    max-width: 100%; /* Gör så att bilden tar upp hela bredden på mindre skärmar */
+    margin: 1rem 1rem;
+  }
 }
 
 .scanButton {
@@ -69,17 +117,6 @@ body {
   margin: 0;
 }
 
-.designButton {
-  width: 220px;
-  height: 48px;
-  border-radius: 63px;
-  border-style: none;
-  }
-
-.designButton h3{
-  font-weight: 800;
-  margin: 0;
-}
 
 .modeller{
   display: flex;
@@ -98,7 +135,8 @@ body {
 
 .modul4 {
   background-color: rgba(169, 161, 161, 1);
-  height: 100vh;
+  height: 80vh;
+  
   
 }
 
@@ -117,9 +155,7 @@ body {
   height: 50vh;
 } */
 
-* {
-  box-sizing: border-box; /* Det finns inte i huvud-css-filen, eller hur? Utan border-box uppför sig inte högermarginalen... */
-}
+
 
 .footer_container {
   border: 1px solid black;
