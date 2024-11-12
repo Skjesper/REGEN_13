@@ -139,6 +139,10 @@ header {
     max-width: 100%;
     margin: 1rem;
   }
+  .ctaImg {
+    max-width: 100%; /* Gör så att bilden tar upp hela bredden på mindre skärmar */
+   
+  }
 }
 
 /* Button */
