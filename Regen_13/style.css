@@ -32,7 +32,7 @@ body {
  .wrapper {
   outline: 3px solid red;
   margin-inline: auto;
-  width: min(1440px, 100% - 4rem);
+  width: min(1700px, 100% - 4rem);
   padding-top: 3rem;
   
  }
@@ -89,11 +89,18 @@ body {
   font-size: 1rem;
 }
 
+.ctaH2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
 .ctaBox {
   display: flex;
   flex-direction: column; /* Ordnar elementen vertikalt */
   gap: 5px;
 }
+
+
 
 .ctaImg {
   max-width: 300px;
@@ -103,11 +110,15 @@ body {
 }
 
 @media (max-width: 768px) {
-  .ctaImg {
-    max-width: 100%; /* Gör så att bilden tar upp hela bredden på mindre skärmar */
+  .ctaBox {
     margin: 1rem 1rem;
   }
+  .ctaImg {
+    max-width: 100%; /* Gör så att bilden tar upp hela bredden på mindre skärmar */
+   
+  }
 }
+
 
 .scanButton {
   border-radius: 63px;
