@@ -51,23 +51,8 @@ header {
 
 /* Mobilinställningar */
 @media (max-width: 48rem) { 
-  .footer_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .footer_kundservice,
-  .footer_information,
-  .footer_kontakt,
-  .footer_följoss,
-  .footer_regen {
-    width: 100%;
-    font-size: 1rem;
-    padding: 1.5rem;
-  }
-
+  
+  
   header .leftNav > h1 {
     display: none;
   }
