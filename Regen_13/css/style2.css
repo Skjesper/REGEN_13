@@ -60,7 +60,9 @@
       background-color: white;
       font-family: 'IBM Plex Sans';
       display: flex; /* Control the main, header and footer.*/
-  justify-content: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
     }
     
     .wrapper {
@@ -97,13 +99,6 @@
     width: 50%;
   }
   
-  /* .wrapper {
-    outline: 3px solid red;
-    margin-inline: auto;
-    width: min(1880px, 100% - 16rem);
-    padding-top: 3rem;
-  } */
-
   .hero {
     height: 80vh;
     background-color: gray;
@@ -139,7 +134,7 @@
 .collageContent .item {
   width: 100%; /* Gör att varje item fyller hela bredden av sin cell */
   object-fit: cover; /* Ser till att bilden fyller sin container utan att ändra proportioner */
-/* }
+}
   .newsLetter {
     display: flex;
     flex-direction: row-reverse;
@@ -147,8 +142,8 @@
     height: 34rem;
     width: 100%; /* Låter designen anpassa sig till skärmens bredd */
     
-    /* margin: 0 auto; Centrerar designen */
-  /* }
+    margin: 0 auto;
+  }
   
   .newsLetterText {
     flex: 2;
@@ -161,15 +156,13 @@
   font-weight: 600;
   text-align: left;
   color: rgba(0, 0, 0, 1);
-  ;
-     */
+  ; 
+    
 }
 
   .newsLetterImg {
     flex: 1;
-    background-color: rgb(66, 10, 10);
-    width: 546px;
-    height: auto;
+    height: 100%;
   }
 
 
@@ -181,20 +174,17 @@
       --fs-p: 1rem;
     }
       
-/* 
+
     .heroTextBlock {
       
-      width: calc(100vw - 2.24rem); /* Tar hänsyn till de 1.5rem marginalerna på båda sidor */
+      /* width: calc(100vw - 2.24rem); Tar hänsyn till de 1.5rem marginalerna på båda sidor */
       
     }
-   */
+   
     .hero {
       width: 100vw;
     }
-    .wrapper {
-      margin: 0 3rem;
-    }
-
+   
     .collageContent {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -230,4 +220,5 @@
         padding-bottom: 1rem;
     }
   
+  }
   
