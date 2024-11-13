@@ -1,13 +1,10 @@
-* {
-    box-sizing: border-box; /* Det finns inte i huvud-css-filen, eller hur? Utan border-box uppför sig inte högermarginalen... */
-}
 
 .footer_container {
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
-    padding: 2rem;
+    
     background-color: rgba(106, 106, 106, 0.86);
     width: 100%;
     margin: 0 auto;
