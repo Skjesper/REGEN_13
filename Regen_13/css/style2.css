@@ -51,11 +51,9 @@
   }
 
   img {
-    width: 100%;   /* Gör att bilden tar upp hela bredden på containern */
-    height: 100%;  /* Gör att bilden tar upp hela höjden på containern */
-    object-fit: cover;  /* Gör att bilden täcker hela containern utan att förlora proportioner */
+    display: block;
+    max-width: 100%; /* Anpassar bilden till skärmens storlek */
   }
-
     body {
       background-color: white;
       font-family: 'IBM Plex Sans';
