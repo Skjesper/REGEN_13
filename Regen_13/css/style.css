@@ -33,7 +33,7 @@ header {
 }
 
 /* Wrapper */
-.wrapper {
+main {
   outline: 3px solid red;
   margin-inline: auto;
   width: min(1440px, 100% - 16rem);

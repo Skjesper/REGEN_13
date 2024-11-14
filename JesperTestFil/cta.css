@@ -1,0 +1,40 @@
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6.3rem;
+}
+
+.ctaBox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--main-purple);
+    padding: 1rem;
+    width: 100%;
+    height: 32rem;
+    margin-left: 17.6rem;
+    flex-direction: row;
+  }
+  
+  .ctaTextBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 35%;
+    height: 100%;
+    text-align: left;
+  }
+
+
+  /* Button */
+.scanButton {
+    border-radius: 63px;
+    border: none;
+    width: 120px;
+    height: 45px;
+    margin: 0;
+  }

@@ -1,0 +1,53 @@
+header {
+    width: 100vw;
+    height: 3rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  var(--bgcolor-white);
+    z-index: 1000;
+  }
+  
+  
+  /* Navigation */
+  .leftNav {
+    margin-left: 20px;
+  }
+  
+  .middleNav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .rightNav {
+    margin-right: 20px;
+  }
+  
+  
+  /* Mobilinställningar */
+  @media (max-width: 768px) { 
+    
+    
+    header .leftNav > h1 {
+      display: none;
+    }
+  
+    header .middleNav > ul {
+      display: none;
+    }
+  
+    header .rightNav > .headerButtonDesktop {
+      display: none;
+    }
+    }
+  
+    /* Desktopinställningar */
+    @media (min-width: 769px) {
+      header .leftNav .headerButtonMobile,
+      header .rightNav .headerButtonMobile,
+      header .regenLogoMobileCentered {
+        display: none;
+      }
+    }
