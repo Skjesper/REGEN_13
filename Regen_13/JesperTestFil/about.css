@@ -1,0 +1,26 @@
+
+.aboutContent {
+    width: 100vw; /* Tar upp hela skärmens bredd */
+    height: 25rem; /* Sätter höjden till 25 rem */
+    display: flex; /* Gör att innehållet visas i rad */
+    justify-content: space-between; /* Jämnar ut utrymmet mellan elementen */
+    align-items: center; /* Centrera elementen vertikalt */
+    padding: 1rem; /* Valfritt: ger lite inre utrymme */
+    box-sizing: border-box; /* Se till att padding räknas in i total bredd/höjd */
+    background-color: var(--main-green);
+    margin-top: 17rem;
+}
+
+.aboutText p {
+    color: var(--textcolor-black);
+}
+
+.aboutText {
+    text-align: center;
+    margin: 2.75rem;
+}
+
+.aboutHeading {
+    text-decoration: underline;
+    
+}

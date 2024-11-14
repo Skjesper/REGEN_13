@@ -1,0 +1,109 @@
+/* Global Styles */
+:root {
+    --fs-h1: 8rem;
+    --fs-h3: 4rem;
+    --fs-h2: 6rem;
+    --fs-h4: 1.5rem;
+    --fs-p: 1.5rem;
+
+    font-family: 'IBM Plex Sans';
+    
+    --bgcolor-white: #FFF;
+    --footer: #6C7274;
+    --main-purple: rgba(206, 178, 213, 1);
+    --main-green: rgba(212, 234, 169, 1);
+    --textcolor-black: rgba(0, 0, 0, 1);
+
+
+  }
+  
+  @media (max-width: 1380px) {
+    :root {
+      --fs-xl: 6rem;
+      --fs-h3: 3rem;
+      --fs-p: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 1040px) {
+    :root {
+      --fs-xl: 4rem;
+      --fs-h3: 2rem;
+      --fs-p: 1.2rem;
+    }
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+  body {
+    
+    background-color: white;
+  }
+  
+  /* General Element Styles */
+  img {
+    display: block;
+    max-width: 100%; /* Anpassar bilden till skärmens storlek */
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-size: var(--fs-h1);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: var(--fs-h2);
+  }
+
+  h3 {
+    font-size: var(--fs-h3);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-family: 'IBM Plex Sans';
+    font-size: var(--fs-p);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  p {
+    font-family: 'IBM Plex Sans';
+    font-size: var(--fs-p);
+    color: var(--bgcolor-white);
+    font-style: normal;
+    font-weight: 300;
+    
+  }
+
+  
+  @media (max-width: 1040px) {
+    :root {
+      --fs-xl: 4rem;
+      --fs-h3: 2rem;
+      --fs-p: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 1380px) {
+    :root {
+      --fs-xl: 6rem;
+      --fs-h3: 3rem;
+      --fs-p: 1.2rem;
+    }
+  }
+ 
+  
+  
