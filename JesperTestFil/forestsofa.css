@@ -1,27 +1,25 @@
 
-
 .forestSofa {
     margin-top: 6.3rem;
-    position: relative;
+    position: relative; /* Detta gör att texten kan positioneras relativt till den här div:en */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .forestSofaImg {
+}
+
+.forestSofaImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-  
-  .forestSofaText {
-    position: absolute; /* Gör att texten kan placeras relativt till image-container */
-    top: 40%; /* Flyttar texten till mitten av containern vertikalt */
-    left: 50%; /* Flyttar texten till mitten av containern horisontellt */
-    transform: translate(-50%, -50%); /* Finjusterar så att texten verkligen är centrerad */
-    color: white; /* Gör texten vit så den syns på mörk bakgrund */
-    text-align: center; /* Centrerar texten horisontellt */
-    width: 100%; /* Gör att texten kan ta upp hela bredden */
 
-  }
+.forestSofaText {
+    position: absolute; /* Placera texten ovanpå bilden */
+    top: 30%; /* Vertikal centering */
+    left: 50%; /* Horisontell centering */
+    transform: translate(-50%, -50%); /* Finjustera så att texten verkligen är centrerad */
+    color: white; /* Gör texten vit så den syns på bilden */
+    text-align: center; /* Centrerar texten horisontellt */
+    width: 100%; /* Gör så att texten kan ta upp hela bredden */
+}
