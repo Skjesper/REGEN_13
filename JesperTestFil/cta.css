@@ -5,15 +5,16 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 6.3rem;
+    align-content: flex-end;
 }
 
 .ctaBox {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 1rem;
     background-color: var(--main-purple);
     padding: 1rem;
-    width: 100%;
+    width: 90rem;
     height: 32rem;
     margin-left: 17.6rem;
     flex-direction: row;
