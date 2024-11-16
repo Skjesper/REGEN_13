@@ -1,0 +1,19 @@
+.collageContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Anpassar sig och skapar så många kolumner som möjligt */
+    gap: 10px;
+  }
+  
+  .collageContent {
+    margin-top: 3.5rem;
+  }
+  /* Gör varje item kvadratisk och fyller cellen */
+  .collageContent .item {
+    width: 100%; /* Gör att varje item fyller hela bredden av sin cell */
+    object-fit: cover; /* Ser till att bilden fyller sin container utan att ändra proportioner */
+  }
+
+  .collage {
+    margin: 0 10rem;
+    margin-top: 8.75rem;
+  }
