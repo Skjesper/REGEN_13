@@ -1,0 +1,39 @@
+.hero {
+    padding-top: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .sofaHero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  .heroTextBlock {
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    width: 50%;
+  }
+  
+  /* Design Button */
+  .designButton {
+    width: 210px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  .designButton h3 {
+    font-weight: 800;
+    margin: 0;
+    font-size: 1rem;
+  }

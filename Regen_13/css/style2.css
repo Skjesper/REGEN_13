@@ -1,0 +1,222 @@
+:root {
+  --fs-xl: 8rem;
+  --fs-h3: 4rem;
+  --fs-p: 1.5rem;
+}
+
+
+@media (max-width: 1380px) {
+  :root {
+    --fs-xl: 6rem;
+    --fs-h3: 3rem;
+    --fs-p: 1.2rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  :root {
+    --fs-xl: 4rem;
+    --fs-h3: 2rem;
+    --fs-p: 1.2rem;
+  }
+}
+
+
+
+/* Laptops och små desktops (upp till 1024px) */
+@media (max-width: 1024px) {
+  /* Din CSS-styling för laptops */
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  h2 {
+    font-family: Poppins;
+    font-style: 600;
+  }
+
+  h3 {
+    font-size: var(--fs-h3);
+  }
+
+  p {
+    font-size: var(--fs-p);
+    font-weight: 300;
+  }
+
+  img {
+    display: block;
+    max-width: 100%; /* Anpassar bilden till skärmens storlek */
+  }
+    body {
+      background-color: white;
+      font-family: 'IBM Plex Sans';
+      display: flex; /* Control the main, header and footer.*/
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .wrapper {
+      display: grid;
+      width: 95vw;
+      grid-template-rows: auto 1fr auto; /* Decide how the header, content , footer is positioned on the main*/
+      outline: 3px solid red;
+
+    }
+
+  header {
+    width: 100vw;
+    height: 3rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(106, 106, 106, 0.86);
+    z-index: 1000;
+  }
+
+  
+  .sofaHero {
+    object-fit: cover;
+  }
+  
+  .heroTextBlock {
+    position: absolute;
+    top: 50%;
+    margin-left: 8.75rem;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    width: 50%;
+  }
+  
+  .hero {
+    height: 80vh;
+    background-color: gray;
+  }
+  /* Strular */
+  
+  .aboutContent { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(166, 163, 163, 1);
+    text-align: center;
+    height: 24rem;
+
+  }
+
+  .aboutText {
+    width: 100%;
+    line-height: 31.2px;
+    
+  }
+
+  
+
+.collageContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Anpassar sig och skapar så många kolumner som möjligt */
+  gap: 10px;
+}
+
+/* Gör varje item kvadratisk och fyller cellen */
+.collageContent .item {
+  width: 100%; /* Gör att varje item fyller hela bredden av sin cell */
+  object-fit: cover; /* Ser till att bilden fyller sin container utan att ändra proportioner */
+}
+  .newsLetter {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(110, 48, 48);
+    height: 34rem;
+    width: 100%; /* Låter designen anpassa sig till skärmens bredd */
+    
+    margin: 0 auto;
+  }
+  
+  .newsLetterText {
+    flex: 2;
+    
+  }
+
+  .newsLetterText {
+  font-family: Poppins;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  ; 
+    
+}
+
+  .newsLetterImg {
+    flex: 1;
+    height: 100%;
+  }
+
+
+ 
+  @media (max-width: 768px) {
+    :root {
+      --fs-xl: 4rem;
+      --fs-h3: 2rem;
+      --fs-p: 1rem;
+    }
+      
+
+    .heroTextBlock {
+      
+      /* width: calc(100vw - 2.24rem); Tar hänsyn till de 1.5rem marginalerna på båda sidor */
+      
+    }
+   
+    .hero {
+      width: 100vw;
+    }
+   
+    .collageContent {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+    }
+
+    .modeller {
+      padding-top: 7.5rem;
+    }
+
+    .aboutRegen {
+      height: 51.75rem;
+      
+
+    }
+
+    .aboutContent { 
+      flex-direction: column;
+      height: auto; /* Anpassar höjden automatiskt efter innehållet */
+  }
+    
+  
+    .aboutText {
+      width: 80%;
+      line-height: 1.5rem;
+      padding-top: 1rem;
+
+      
+      
+    }
+    .aboutHeading {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+  
+  }
+  

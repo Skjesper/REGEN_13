@@ -1,25 +1,3 @@
-/* Global Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  background-color: white;
-}
-
-/* General Element Styles */
-img {
-  display: block;
-  max-width: 100%; /* Anpassar bilden till skärmens storlek */
-}
-
-p {
-  font-size: 2rem;
-  font-weight: 300;
-}
 
 header {
   width: 100vw;
@@ -50,7 +28,7 @@ header {
 
 
 /* Mobilinställningar */
-@media (max-width: 48rem) { 
+@media (max-width: 768px) { 
   
   
   header .leftNav > h1 {
@@ -67,7 +45,7 @@ header {
   }
 
   /* Desktopinställningar */
-  @media (min-width: 48.1rem) {
+  @media (min-width: 769px) {
     header .leftNav .headerButtonMobile,
     header .rightNav .headerButtonMobile,
     header .regenLogoMobileCentered {

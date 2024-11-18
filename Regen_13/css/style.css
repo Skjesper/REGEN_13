@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: white;
+}
+
+/* General Element Styles */
+img {
+  display: block;
+  max-width: 100%; /* Anpassar bilden till skärmens storlek */
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+header {
+  width: 100vw;
+  height: 3rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(106, 106, 106, 0.86);
+  z-index: 1000;
+}
+
+/* Wrapper */
+main {
+  outline: 3px solid red;
+  margin-inline: auto;
+  width: min(1440px, 100% - 16rem);
+  padding-top: 3rem;
+}
+
+/* Navigation */
+.leftNav {
+  margin-left: 20px;
+}
+
+.middleNav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.rightNav {
+  margin-right: 20px;
+}
+
+/* Hero Section */
+.hero {
+  padding-top: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sofaHero {
+  object-fit: cover;
+}
+
+.heroTextBlock {
+  position: absolute;
+  top: 50%;
+  left: 8rem;
+  transform: translateY(-50%);
+  text-align: left;
+  color: white;
+  width: 50%;
+}
+
+.heroTextBlock h2 {
+  font-size: 4rem;
+}
+
+/* Design Button */
+.designButton {
+  width: 210px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  margin-top: 1rem;
+}
+
+.designButton h3 {
+  font-weight: 800;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* CTA Section */
+.ctaBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: rgba(217, 217, 217, 1);
+  padding: 1rem;
+}
+
+.ctaTextBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.imgContent {
+  grid-column: 1;
+}
+
+.ctaBox h3,
+.cta h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ctaBox h3 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.cta h2 {
+  font-weight: 600;
+  font-size: 8rem;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ctaImg {
+    max-width: 100%;
+    margin: 1rem;
+  }
+}
+
+/* Button */
+.scanButton {
+  border-radius: 63px;
+  border: none;
+  width: 120px;
+  height: 45px;
+  margin: 0;
+}
+
+/* Modeller Section */
+.modeller {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-color: rgba(146, 20, 20, 0.86);
+}
+
+.modeller h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+}
+
+/* Modul 4 */
+.modul4 {
+  background-color: rgba(169, 161, 161, 1);
+  height: 80vh;
+}
+
+/* Slider */
+.slider {
+  background-color: rgba(217, 217, 217, 1);
+  height: 80vh;
+}
+
+/* Newsletter */
+.newsLetter {
+  background-color: white;
+  height: 80vh;
+}
+
+
+
+
+.footer_container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(106, 106, 106, 0.86);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer_kundservice,
+.footer_information,
+.footer_kontakt,
+.footer_följoss,
+.footer_regen {
+  border: 1px solid black;
+  background-color: rgba(106, 106, 106, 0.86);
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+@media (max-width: 48rem) { 
+  .footer_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer_kundservice,
+  .footer_information,
+  .footer_kontakt,
+  .footer_följoss,
+  .footer_regen {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
