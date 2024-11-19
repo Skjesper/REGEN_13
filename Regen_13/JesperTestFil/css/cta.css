@@ -1,35 +1,60 @@
-
+/* CTA Container */
 .cta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 6.3rem;
-    align-content: flex-end;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.3rem;
+  align-items: center; /* Centrerar innehållet horisontellt */
 }
 
-.ctaBox {
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
-    background-color: var(--main-purple);
-    padding: 1rem;
-    width: 90rem;
-    height: 32rem;
-    margin-left: 17.6rem;
-    flex-direction: row;
-  }
-  
-  .ctaTextBlock {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    width: 35%;
-    height: 100%;
-    text-align: left;
-  }
+/* Content Wrapper */
+.ctaContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrerar innehåll vertikalt */
+  align-items: flex-end;
+  width: 100%;
+  gap: 2rem; /* Ger avstånd mellan H1 och ctaBox */
+}
 
+.ctaHeading {
+  text-align: right;
+  width: 80%;
+}
+
+/* CTA Box */
+.ctaBox {
+  display: flex;
+  justify-content: space-between; /* Ger avstånd mellan textblock och bild */
+  align-items: center; /* Centrerar innehållet vertikalt */
+  width: 80%; /* Anpassad bredd */
+  height: 32rem; /* Fast höjd */
+  background-color: var(--main-purple);
+  padding: 2rem;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.ctaTextBlock {
+  width: 50%;
+  
+}
+
+
+ /* CTA Image */
+.imgContent {
+  width: 50%; /* Bilddelen tar resterande bredd */
+  height: 100%; /* Fyller hela höjden */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContent img {
+  max-height: 100%; /* Anpassar bildens höjd */
+  width: auto; /* Behåller proportionerna */
+  display: block;
+}
 
   /* Button */
 .scanButton {
@@ -39,3 +64,5 @@
     height: 45px;
     margin: 0;
   }
+
+
