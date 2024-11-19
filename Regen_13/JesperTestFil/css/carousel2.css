@@ -61,21 +61,25 @@ body {
     right: -2rem;
 } */
 
+
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
   
 
   .carousel {
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    height: 50vh;
     position: relative;
+    margin: auto;
   }
   
   .carousel > ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    
   }
   
   .slide {
@@ -89,7 +93,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
   
@@ -125,15 +129,34 @@ body {
   }
   
   .carousel-button.prev {
-    left: 4rem;
+    left: -4rem;
   }
   
   .carousel-button.next {
-    right: 4rem;
+    right: -4rem;
   }
 
   .models {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 16.5rem;
   }
+
+ 
+    @media (max-width: 768px) {
+        .models {
+            margin-top: 7.6rem;
+        }
+        .carousel-button{
+            font-size: 2rem;
+        }
+        .carousel-button.prev {
+            left: -1.5rem;
+          }
+          
+          .carousel-button.next {
+            right: -1.5rem;
+          }
+    
+    }

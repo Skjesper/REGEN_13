@@ -20,20 +20,42 @@
     transform: translateY(-50%);
     text-align: left;
     color: white;
-    width: 50%;
+    width: 60%;
   }
   
   /* Design Button */
   .designButton {
-    width: 210px;
-    height: 40px;
+    width: 160px;
+    height: 35px;
     border-radius: 40px;
     border: none;
     margin-top: 1rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-family: Poppins;
+    background-color: var(--textcolor-black);
+    color: var(--bgcolor-white);
+    cursor: pointer;
+
   }
+  
   
   .designButton h3 {
     font-weight: 800;
     margin: 0;
     font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+
+    .heroTextBlock {
+      position: absolute;
+      top: 30%;
+      left: 5%;
+      transform: translateY(-50%);
+      text-align: left;
+      color: white;
+      width: 80%;
+    }
+
   }

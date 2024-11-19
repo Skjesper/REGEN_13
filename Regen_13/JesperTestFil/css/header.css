@@ -30,8 +30,9 @@ header {
   @media (max-width: 768px) { 
     
     
-    header .leftNav > h1 {
+    header .leftNav > h1, h4 {
       display: none;
+      
     }
   
     header .middleNav > ul {

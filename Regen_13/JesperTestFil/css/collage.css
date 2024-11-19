@@ -17,3 +17,12 @@
     margin: 0 10rem;
     margin-top: 8.75rem;
   }
+
+  @media (max-width: 768px) {
+    .collageContent {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Anpassar sig och skapar så många kolumner som möjligt */
+      gap: 10px;
+    }
+
+  }
