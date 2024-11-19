@@ -59,11 +59,11 @@
     background-color: white;
   }
   
-  /* General Element Styles */
-  img {
+  General Element Styles
+  /* img {
     display: block;
-    max-width: 100%; /* Anpassar bilden till skärmens storlek */
-  }
+    max-width: 100%; 
+  } */
 
   h1 {
     font-family: Poppins;
