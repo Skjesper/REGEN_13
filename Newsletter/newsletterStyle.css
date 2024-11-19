@@ -184,8 +184,6 @@ header {
 
 
 
-
-
 /* Newsletter */
 .newsletter {
   background-color: blue; /*ändra till --main-blue */
@@ -201,8 +199,8 @@ header {
 
 
 .newsletter .newsletterImage {
-    width: 21rem;
-    height: 21rem;
+    width: 22rem;
+    height: 22rem;
     border: 1px solid black;
     display: block; 
     margin-bottom: 1.5rem;
@@ -210,14 +208,14 @@ header {
 }
 
 
-.newsletter > h2 {
+.newsletter > h1 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     text-align: left;
     width: 100%;
 }
 
-newsletter > h3 {
+.newsletter > h2 {
   margin-top: 1.5rem;
   text-align: left;
   width: 100%;
@@ -252,5 +250,45 @@ newsletter > h3 {
   margin-top: 1rem;
   width: auto;
   text-align: left;
+  outline: none;
   box-shadow: none; /* Av någon anledning får knappen en grå skugga, och jag får inte bort den? */
+}
+
+@media (min-width: 769px) {  /* Vi behöver förmodligen fler breakpoints */
+  .newsletter {
+    flex-direction: row-reverse;
+    height: 22rem;
+    margin: 0; 
+    padding: 0;
+    margin-right: 30rem;
+    align-items: stretch;
+  }
+
+  .newsletter .newsletterImage {
+    height: 100%;
+    margin-bottom: 0; 
+    align-self: stretch;
+  }
+
+  .newsletter .formwrapper {
+    flex: 1;
+    margin-right: 5rem;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    overflow: hidden; 
+    word-wrap: break-word; 
+    max-width: 100%; 
+  }
+
+  .newsletter > h1 {
+    text-align: left;
+  }
+
+  .newsletter > h2 {
+    text-align: left;
+  }
+
+  .newsletter > form {
+    text-align: left;
+  }
 }
