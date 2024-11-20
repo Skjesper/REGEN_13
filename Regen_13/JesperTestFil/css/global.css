@@ -1,12 +1,13 @@
 /* Global Styles */
 :root {
-    --fs-xl: 8rem;
+    --fs-xl: 9rem;
     --fs-h3: 4rem;
     --fs-h2: 6rem;
-    --fs-h4: 1.5rem;
+    --fs-h4: 2rem;
     --fs-p: 1.5rem;
 
     font-family: 'IBM Plex Sans';
+
     
     --bgcolor-white: #FFF;
     --footer: #6C7274;
@@ -14,32 +15,6 @@
     --main-green: rgba(212, 234, 169, 1);
     --textcolor-black: rgba(0, 0, 0, 1);
 
-
-
-  }
-  
-  @media (max-width: 1380px) {
-    :root {
-      --fs-xl: 5rem;
-      --fs-h3: 3rem;
-      --fs-p: 1.2rem;
-    }
-  }
-  
-  @media (max-width: 1040px) {
-    :root {
-      --fs-xl: 3rem;
-      --fs-h3: 2rem;
-      --fs-p: 1.2rem;
-    }
-  }
-
-  @media (max-width: 1040px) {
-    :root {
-      --fs-xl: 2rem;
-      --fs-h3: 1.5rem;
-      --fs-p: 1rem;
-    }
   }
 
 
@@ -52,6 +27,7 @@
   
   ul {
     list-style-type: none;
+    font-size: var(--fs-p);
   }
 
   body {
@@ -85,7 +61,7 @@
 
   h4 {
     font-family: 'IBM Plex Sans';
-    font-size: var(--fs-p);
+    font-size: var(--fs-h4);
     font-style: normal;
     font-weight: 700;
   }
@@ -99,6 +75,9 @@
     
   }
 
+
+
+ 
   
   @media (max-width: 1040px) {
     :root {
@@ -117,4 +96,13 @@
   }
  
   
-  
+  @media (max-width: 768px) {
+    :root {
+      --fs-xl: 2.5rem;
+      --fs-h4: 1.5rem;
+      --fs-h3: 2rem;
+      --fs-h2: 3rem;
+      --fs-p: 1rem;
+    }
+
+  }

@@ -17,3 +17,21 @@
     margin: 0 10rem;
     margin-top: 8.75rem;
   }
+
+  @media (max-width: 768px) {
+    .collageContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Sätt alltid 2 kolumner på mobilen */
+        gap: 10px;
+        margin: 0 2rem; /* Minska marginalerna för mobil */
+    }
+
+    .collage {
+        margin: 0 2rem; /* Mindre marginaler på mobil */
+        margin-top: 5rem; /* Justera toppmarginalen på mobil */
+    }
+
+    .collageHeading h1 {
+     display: none;
+    } 
+}

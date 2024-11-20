@@ -35,26 +35,53 @@
 } */
 
 .aboutRegen {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 100%;
-    height: 24rem;
-    background-color: var(--main-green);
-    margin-top: 17rem; 
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; 
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: var(--main-green);
+  flex-wrap: wrap; /* Gör att elementen går till nästa rad vid behov */
+}
 
+.aboutContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Gör att blocken radbryts på små skärmar */
+  gap: 2rem;
+  width: 100%;
+  margin: 0 5rem;
+}
+  
+.aboutHeading h3 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.aboutText p {
+  color: var(--textcolor-black);
+}
+
+
+.aboutText {
+  display: flex;
+  flex-direction: column; /* Vertikal layout */
+  align-items: center; /* Centrerar innehåll horisontellt */
+  text-align: center;
+  flex: 1 1 calc(25% - 2rem); /* Responsiv bredd: 4 block per rad */
+  max-width: 20rem; /* Begränsar bredd */
+  gap: 1rem; /* Mellanrum mellan ikon, rubrik och text */
+  margin-top: 1.5rem;
+  
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
   .aboutContent {
-    display: flex;
-    justify-content: space-between;
-
-  }
-
-  .aboutText {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    
+      flex-direction: column; /* Ändra till kolumn-layout */
+      align-items: center;   /* Centrerar innehållet */
+      gap: 2rem;             /* Ger mellanrum mellan blocken */
   }
   
+}

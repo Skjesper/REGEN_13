@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/collage.css">
     <link rel="stylesheet" href="./css/carousel2.css">
+    <link rel="stylesheet" href="./css/slider.css">
     
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -21,9 +22,11 @@
 <body>
     <header>
         <div class="leftNav">
-          <h4>ReGen</h4>
-          <button class="headerButtonMobile">Hamburger</button>
-          <button class="headerButtonMobile">Meny</button>
+          <img src="../JesperTestFil/Assets/Regen_logo.svg">
+          <button class="headerButtonMobile"><img src="../JesperTestFil/Assets/burger_meny.svg">
+            <span>Meny</span>
+          </button>
+          
         </div>
         <div class="middleNav">
           <ul>
@@ -33,14 +36,16 @@
             <li>Information</li>
           </ul>
           <div class="regenLogoMobileCentered">
-            ReGen
+            <img src="../JesperTestFil/Assets/Regen_logo.svg">
           </div>
         </div>
         <div class="rightNav">
-          <button class="headerButtonMobile">Varukorg</button>
+          <button class="headerButtonMobile">
+            <span>Varukorg</span><img src="../JesperTestFil/Assets/shopping-cart.svg">
+            
           <button class="headerButtonDesktop">Glas</button>
           <button class="headerButtonDesktop">Glob</button>
-          <button class="headerButtonKorg">Korg</button>
+          
         </div>
     </header>
     <main>
@@ -70,7 +75,7 @@
                 </div>
               </div>
               <div class="models">
-                <div class="modelsHeading"><h3>Populära modeller</h3></div>
+                <h3>Populära modeller</h3></div>
               <section aria-label="Newest Photos">
                 <div class="carousel" data-carousel>
                   <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
@@ -91,33 +96,39 @@
             </div>
                     <div class="aboutRegen">
                         <div class="aboutContent">
-                          <div class="aboutIcon">
-                            
-                          </div>
+                          
                             <div class="aboutText">
-                              <h4 class="aboutHeading">SKRÄDDARSYDD</h4>
+                              <img class="aboutIcon" src="../JesperTestFil/Assets/scissors.svg">
+                              <div class="aboutHeading">
+                                <h3>SKRÄDDARSYDD</h3>
+                              </div>
                               <p>Varje ReGen-soffa är unik, återvunnen och skräddarsydd för ditt hem.</p>
                             </div>
-                            <div class="aboutIcon">
-                            
-                            </div>
+                           
                             <div class="aboutText">
-                              <h4 class="aboutHeading">FÅ HJÄLP AV AI</h4>
+                              <img class="aboutIcon" src="../JesperTestFil/Assets/smile.svg">
+                              <div class="aboutHeading">
+                                <h3>FÅ HJÄLP AV AI</h3>
+                              </div>
+                          
                               <p>Skanna ditt rum och låt vår AI matcha soffans klädsel med din stil och färg.</p>
                             </div>
-                            <div class="aboutIcon">
-                            
-                            </div>
+                           
                             <div class="aboutText">
-                              <h4 class="aboutHeading">ENKEL SKÖTSEL </h4>
+                              <img class="aboutIcon" src="../JesperTestFil/Assets/thumbs up.svg">
+                              <div class="aboutHeading">
+                                <h3>ENKEL SKÖTSEL</h3>
+                              </div>
                               <p>ReGen vårdprodukter är färganpassade och förlänger soffans livslängd.</p>
                             </div>
-                            <div class="aboutIcon">
                             
-                            </div>
                             <div class="aboutText">
-                              <h4 class="aboutHeading">CIRKULÄRT</h4>
-                              <p>Återvinn din ReGen-soffa - ge materialen nytt liv i framtida möbler.</p>
+                              <img class="aboutIcon" src="../JesperTestFil/Assets/refresh-cw.svg">
+                              
+                              <div class="aboutHeading">
+                                <h3>CIRKULÄRT</h3>
+                              </div>
+                              <p>Återvinn din ReGen-soffa – ge materialen nytt liv i framtida möbler.</p>
                             </div>
                         </div>
                     </div>  
@@ -128,6 +139,7 @@
                         </div>
                     </div>
             </div>
+            
             <div class="collage">
                 <div class="collageHeading">
                   <h1>Soffistikera!</h1>
@@ -157,7 +169,7 @@
     </main>
     <footer class="footer_container">
         <div class="footer_section footer_kundservice">
-            <h4 class="footer_title">Kundservice</h4>
+            <h3 class="footer_title">Kundservice</h3>
             <ul class="footer_content">
                 <li>Kundtjänst</li>
                 <li>Köpvillkor</li>
@@ -170,7 +182,7 @@
         </div>
     
         <div class="footer_section footer_information">
-            <h4 class="footer_title">Information</h4>
+            <h3 class="footer_title">Information</h3>
             <ul class="footer_content">
                 <li>Om oss</li>
                 <li>Underhåll & skötsel</li>
@@ -182,7 +194,7 @@
         </div>
     
         <div class="footer_section footer_kontakt">
-            <h4 class="footer_title">Kontakt</h4>
+            <h3 class="footer_title">Kontakt</h3>
             <ul class="footer_content">
                 <li>Telefonnummer</li>
                 <li>Email</li>
@@ -191,7 +203,7 @@
         </div>
     
         <div class="footer_section footer_follow">
-            <h4 class="footer_title">Följ oss!</h4>
+            <h3 class="footer_title">Följ oss!</h3>
             <ul class="footer_content">
                 <li>Facebook</li>
                 <li>Instagram</li>
@@ -201,9 +213,10 @@
         </div>
     
         <div class="footer_section footer_brand">
-            <h4 class="footer_logo">ReGen</h4>
+            <img src="../JesperTestFil/Assets/Regen_logo.svg">
         </div>
     </footer>
     <script src="../JesperTestFil/JavaScript/carousel2.js"></script>
+    <script src="../JesperTestFil/JavaScript/slider.js"></script>
 </body>
 </html>
