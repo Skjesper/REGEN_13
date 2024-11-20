@@ -28,7 +28,7 @@
   justify-content: space-between; /* Ger avstånd mellan textblock och bild */
   align-items: center; /* Centrerar innehållet vertikalt */
   width: 80%; /* Anpassad bredd */
-  height: 32rem; /* Fast höjd */
+  height: 60vh; /* Fast höjd */
   background-color: var(--main-purple);
   padding: 2rem;
   gap: 1rem;

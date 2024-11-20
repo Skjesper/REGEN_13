@@ -40,4 +40,12 @@
       width: 100%;
       padding: 1.5rem;
   }
-}
+
+  .footer_title {
+    font-weight: 700;
+    font-family: 'IBM Plex Sans'; 
+    color: var(--bgcolor-white);
+    font-size: var(--fs-p);
+    
+  }
+} 

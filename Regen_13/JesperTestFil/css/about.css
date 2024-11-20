@@ -51,6 +51,7 @@
   flex-wrap: wrap; /* Gör att blocken radbryts på små skärmar */
   gap: 2rem;
   width: 100%;
+  margin: 0 5rem;
 }
   
 .aboutHeading h3 {
