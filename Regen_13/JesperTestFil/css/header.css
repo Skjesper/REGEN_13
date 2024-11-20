@@ -69,7 +69,7 @@ header {
       cursor: pointer;  /* Gör det tydligt att det är en knapp */
 
     }
-    .headerButtonMobile img {
+    .headerButtonMobile img  {
       margin-right: 0.5rem;
     }
   }
