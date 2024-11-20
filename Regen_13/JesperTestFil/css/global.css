@@ -7,7 +7,7 @@
     --fs-p: 1.5rem;
 
     font-family: 'IBM Plex Sans';
-    
+
     
     --bgcolor-white: #FFF;
     --footer: #6C7274;
@@ -27,6 +27,7 @@
   
   ul {
     list-style-type: none;
+    font-size: var(--fs-p);
   }
 
   body {

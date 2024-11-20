@@ -1,7 +1,7 @@
-.footer_title h3 {
-  color: var(--bgcolor-white);
-  font-style: normal;
+.footer_title {
   font-weight: 700;
+  font-family: 'IBM Plex Sans'; 
+  color: var(--bgcolor-white);
   font-size: var(--fs-p);
 }
 
@@ -27,6 +27,7 @@
   text-align: left;
 }
 
+
 /* För mobilanpassning */
 @media (max-width: 48rem) {
   .footer_container {
@@ -34,6 +35,7 @@
       grid-template-rows: repeat(5, auto);
       gap: 1rem;
       padding: 1rem;
+      
   }
 
   .footer_section {
@@ -41,11 +43,4 @@
       padding: 1.5rem;
   }
 
-  .footer_title {
-    font-weight: 700;
-    font-family: 'IBM Plex Sans'; 
-    color: var(--bgcolor-white);
-    font-size: var(--fs-p);
-    
-  }
 } 
