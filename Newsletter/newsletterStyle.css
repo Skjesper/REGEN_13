@@ -250,8 +250,7 @@ header {
   margin-top: 1rem;
   width: auto;
   text-align: left;
-  outline: none;
-  box-shadow: none; /* Av någon anledning får knappen en grå skugga, och jag får inte bort den? */
+  border: none;
 }
 
 @media (min-width: 769px) {  /* Vi behöver förmodligen fler breakpoints */
