@@ -53,6 +53,15 @@
   width: 100%;
 }
   
+.aboutHeading h3 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.aboutText p {
+  color: var(--textcolor-black);
+}
+
 
 .aboutText {
   display: flex;
@@ -62,6 +71,8 @@
   flex: 1 1 calc(25% - 2rem); /* Responsiv bredd: 4 block per rad */
   max-width: 20rem; /* Begränsar bredd */
   gap: 1rem; /* Mellanrum mellan ikon, rubrik och text */
+  margin-top: 1.5rem;
+  
 }
 
 /* Responsiv design */
