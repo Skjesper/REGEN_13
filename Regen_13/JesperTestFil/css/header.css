@@ -13,7 +13,9 @@ header {
   
   /* Navigation */
   .leftNav {
+    display: flex;
     margin-left: 5rem;
+    
   }
   
   .middleNav ul {
@@ -24,6 +26,7 @@ header {
   
   .rightNav {
     margin-right: 5rem;
+    display: flex;
   }
   
   
@@ -31,7 +34,7 @@ header {
   @media (max-width: 768px) { 
     
     
-    header .leftNav > h1, h4 {
+    header .leftNav > img, h4 {
       display: none;
       
     }
@@ -43,7 +46,33 @@ header {
     header .rightNav > .headerButtonDesktop {
       display: none;
     }
+
+    .leftNav {
+      margin-left: 0;
     }
+    .rightNav {
+      margin-right: 0;
+    }
+
+    header {
+      justify-content: space-around;
+      align-items: flex-end;
+      padding-bottom: 1.5rem;
+    }
+
+    .headerButtonMobile {
+      display: flex;
+      align-items: center;
+      background: none; /* Tar bort standardbakgrunden */
+      border: none;     /* Tar bort kantlinjen */
+      padding: 0;       /* Tar bort eventuell inre marginal */
+      cursor: pointer;  /* Gör det tydligt att det är en knapp */
+
+    }
+    .headerButtonMobile img {
+      margin-right: 0.5rem;
+    }
+  }
   
     /* Desktopinställningar */
     @media (min-width: 769px) {
@@ -52,4 +81,5 @@ header {
       header .regenLogoMobileCentered {
         display: none;
       }
+
     }
