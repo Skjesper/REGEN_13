@@ -12,3 +12,9 @@ menuButton.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
   slideMenu.classList.remove('open');
 });
+
+document.addEventListener('click', (event) => {
+  if (!slideMenu.contains(event.target) && !menuButton.contains(event.target)) {
+    slideMenu.classList.remove('open');
+  }
+});

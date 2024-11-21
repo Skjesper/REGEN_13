@@ -34,8 +34,10 @@
 
 .footer_content.socials img {
   margin-right: 1rem;
+  max-height: 1.5rem;
   
 }
+
 
 /* För mobilanpassning */
 @media (max-width: 48rem) {
