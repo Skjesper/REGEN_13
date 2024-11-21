@@ -1,5 +1,5 @@
 /* Grundlayout */
-.slide-menu {
+.slide-menu-mobile {
     position: fixed;
     top: 0;
     left: -100%; /* Starta utanför skärmen */
@@ -17,7 +17,7 @@
   }
   
   /* När menyn är öppen */
-  .slide-menu.open {
+  .slide-menu-mobile.open {
     left: 0;
   }
   

@@ -1,6 +1,6 @@
 // Hämta element från DOM
 const menuButton = document.querySelector('.headerButtonMobile');
-const slideMenu = document.querySelector('.slide-menu');
+const slideMenu = document.querySelector('.slide-menu-mobile');
 const closeButton = document.querySelector('.close-menu');
 
 // Öppna menyn när hamburgermenyn klickas
