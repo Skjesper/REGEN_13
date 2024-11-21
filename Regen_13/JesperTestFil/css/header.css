@@ -25,8 +25,8 @@ header {
   }
   
   .rightNav {
-    margin-right: 5rem;
     display: flex;
+    
   }
   
   
@@ -81,5 +81,23 @@ header {
       header .regenLogoMobileCentered {
         display: none;
       }
+      .headerButtonDesktop {
+        display: flex;
+      align-items: center;
+      background: none; /* Tar bort standardbakgrunden */
+      border: none;     /* Tar bort kantlinjen */
+      padding: 0;       /* Tar bort eventuell inre marginal */
+      cursor: pointer;  /* Gör det tydligt att det är en knapp */
+      flex-direction: column-reverse;
+      margin-right: 1.5rem;
+      }
 
+      .rightNav {
+        margin-right: 10rem;
+        justify-content: space-around;
+      }
+
+      .leftNav {
+        margin-left: 10rem;
+      }
     }
