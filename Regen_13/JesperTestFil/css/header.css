@@ -21,7 +21,7 @@ header {
   .middleNav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 4rem;
   }
   
   .rightNav {
@@ -90,6 +90,10 @@ header {
       cursor: pointer;  /* Gör det tydligt att det är en knapp */
       flex-direction: column-reverse;
       margin-right: 1.5rem;
+      }
+
+      .headerButtonDesktop span {
+        margin-top: 0.5rem;
       }
 
       .rightNav {
