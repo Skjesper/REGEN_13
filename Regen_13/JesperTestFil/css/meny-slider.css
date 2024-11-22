@@ -1,0 +1,119 @@
+/* Grundlayout */
+.slide-menu-mobile {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Starta utanför skärmen */
+    width: 80%; /* Bredd på menyn */
+    /* max-width: 300px; */
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: left 0.3s ease-in-out; /* Smidig animation */
+  }
+
+  .slideMenuContent {
+    margin-top: 6rem;
+  }
+  
+  /* När menyn är öppen */
+  .slide-menu-mobile.open {
+    left: 0;
+  }
+  
+  .close-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 5rem;
+    
+  }
+
+  .close-menu span{
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    font-weight: 300;
+  }
+
+  .slideMenuContent {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+.menuButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 5rem;
+  margin-top: 6.6rem;
+}
+
+.menuButtons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none; /* Tar bort standardbakgrunden */
+  border: none;     /* Tar bort kantlinjen */
+  padding: 0; 
+  
+}
+
+.menuButtons span {
+  padding-top: 0.4rem;
+}
+
+.infoButtons {
+  display: flex;
+  margin-top: 14.5rem;
+
+}
+
+.infoButtons ul {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.infoButtons li {
+  margin-top: 0.4rem;
+}
+
+.slideMenuLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+ 
+}
+
+.slideMenuLinks ul {
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 100%;
+  
+
+}
+
+.slideMenuLinks li {
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.slideMenuLinks img {
+  
+  max-height: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .slide-menu {
+    display: none;
+  }
+}

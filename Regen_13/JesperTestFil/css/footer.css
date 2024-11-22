@@ -19,12 +19,23 @@
   gap: 2rem;
   background-color: var(--footer);
   width: 100%;
-  margin: 0 auto;
+  margin-top: 6.75rem;
 }
 
 .footer_section {
   padding: 1.5rem;
   text-align: left;
+}
+
+.footer_content.socials {
+  display: flex;
+  
+}
+
+.footer_content.socials img {
+  margin-right: 1rem;
+  max-height: 1.5rem;
+  
 }
 
 

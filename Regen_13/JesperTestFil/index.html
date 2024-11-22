@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/collage.css">
     <link rel="stylesheet" href="./css/carousel2.css">
     <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/meny-slider.css">
+    <link rel="stylesheet" href="./css/meny-slider-desktop.css">
     
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -27,6 +29,38 @@
             <span>Meny</span>
           </button>
           
+<!-- Slide-in-meny -->
+<div class="slide-menu-mobile">
+  <div class="slideMenuContent">
+  
+  <button class="close-menu" ><img src="../JesperTestFil/Assets/menu_x.svg"><span>Stäng</span></button>
+  <div class="slideMenuLinks">
+    
+  <img class="slideMenuContentLogo"> <img src="../JesperTestFil/Assets/Regen_logo.svg" alt="">
+  
+    <ul>
+      <li>Produkter<span>+</span></li>
+      <li>Designa<span>+</span></li>
+      <li>Inspiration<span>+</span></li>
+      <li>Information<span>+</span></li>
+    </ul>
+  </div>
+  <div class="menuButtons">
+    <button><img src="../JesperTestFil/Assets/user_icon.svg" alt=""><span>Profil</span></button>
+    <button><img src="../JesperTestFil/Assets/globe_icon.svg" alt=""><span>Språk</span></button>
+    <button><img src="../JesperTestFil/Assets/support_icon.svg" alt=""><span>Support</span></button>
+  </div>
+  <div class="infoButtons">
+    <ul>
+      <li>Om oss</li>
+      <li>Hållbarhet</li>
+      <li>Logga ut</li>
+      
+    </ul>
+  </div>
+  </div>
+</div>
+  </div>
         </div>
         <div class="middleNav">
           <ul>
@@ -43,8 +77,9 @@
           <button class="headerButtonMobile">
             <span>Varukorg</span><img src="../JesperTestFil/Assets/shopping-cart.svg">
             
-          <button class="headerButtonDesktop">Glas</button>
-          <button class="headerButtonDesktop">Glob</button>
+          <button class="headerButtonDesktop"><span>Språk</span><img src="../JesperTestFil/Assets/globe_icon.svg"></button>
+          <button class="headerButtonDesktop"><span>Profil</span><img src="../JesperTestFil/Assets/user_icon.svg"></button>
+          <button class="headerButtonDesktop"><span>Varukorg</span><img src="../JesperTestFil/Assets/shopping-cart.svg"></button>
           
         </div>
     </header>
@@ -204,11 +239,10 @@
     
         <div class="footer_section footer_follow">
             <h3 class="footer_title">Följ oss!</h3>
-            <ul class="footer_content">
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
+            <ul class="footer_content socials">
+                <li><img src="../JesperTestFil/Assets/facebook_white.svg"></li>
+                <li><img src="../JesperTestFil/Assets/Instagram_white.svg"></li>
+                <li><img src="../JesperTestFil/Assets/Linkedin_white.svg"></li>
             </ul>
         </div>
     
@@ -218,5 +252,7 @@
     </footer>
     <script src="../JesperTestFil/JavaScript/carousel2.js"></script>
     <script src="../JesperTestFil/JavaScript/slider.js"></script>
+    <script src="../JesperTestFil/JavaScript/meny-slider.js"></script>
+    <script src="../JesperTestFil/JavaScript/meny-slider-desktop.js"></script>
 </body>
 </html>
