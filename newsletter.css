@@ -1,0 +1,314 @@
+/* Global Styles */
+
+:root {
+    --main-purple: #CEB2D5;
+    --main-green: #D4EAA9;
+    --main-blue: #E2F1FD;
+    --beige-sofa: #EDDAC5;
+    --blue-sofa: #9EB1B8;
+    --brown-sofa: #A54827;
+    --bgcolor: #FFFFFF;
+    --textcolor: #000000;
+    --footer: #6C7274;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: white;
+  }
+  
+  /* General Element Styles */
+  img {
+    display: block;
+    max-width: 100%; /* Anpassar bilden till skärmens storlek */
+  }
+  
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  header {
+    width: 100vw;
+    height: 3rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(106, 106, 106, 0.86);
+    z-index: 1000;
+  }
+  
+  /* Wrapper */
+  .wrapper {
+    outline: 3px solid red;
+    margin-inline: auto;
+    width: min(1440px, 100% - 16rem);
+    padding-top: 3rem;
+  }
+  
+  /* Navigation */
+  .leftNav {
+    margin-left: 20px;
+  }
+  
+  .middleNav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .rightNav {
+    margin-right: 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding-top: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sofaHero {
+    object-fit: cover;
+  }
+  
+  .heroTextBlock {
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    width: 50%;
+  }
+  
+  .heroTextBlock h2 {
+    font-size: 4rem;
+  }
+  
+  /* Design Button */
+  .designButton {
+    width: 210px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  .designButton h3 {
+    font-weight: 800;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* CTA Section */
+  .ctaBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 1rem;
+  }
+  
+  .ctaTextBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .imgContent {
+    grid-column: 1;
+  }
+  
+  .ctaBox h3,
+  .cta h2 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .ctaBox h3 {
+    font-weight: 600;
+    font-size: 4rem;
+  }
+  
+  .cta h2 {
+    font-weight: 600;
+    font-size: 8rem;
+    text-align: right;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ctaImg {
+      max-width: 100%;
+      margin: 1rem;
+    }
+    .ctaImg {
+      max-width: 100%; /* Gör så att bilden tar upp hela bredden på mindre skärmar */
+     
+    }
+  }
+  
+  /* Button */
+  .scanButton {
+    border-radius: 63px;
+    border: none;
+    width: 120px;
+    height: 45px;
+    margin: 0;
+  }
+  
+  /* Modeller Section */
+  .modeller {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: rgba(146, 20, 20, 0.86);
+  }
+  
+  .modeller h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+  }
+  
+  /* Modul 4 */
+  .modul4 {
+    background-color: rgba(169, 161, 161, 1);
+    height: 80vh;
+  }
+  
+  /* Slider */
+  .slider {
+    background-color: rgba(217, 217, 217, 1);
+    height: 80vh;
+  }
+  
+  
+  
+  
+  /* Newsletter */
+
+  @media (max-width: 1024px) {
+    .newsletter {
+        font-size: 14px;
+    }
+  }
+
+  .newsletter {
+    background-color: var(--main-blue);
+    margin-top: 3.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  
+  .newsletterImage {
+      height: 24rem;
+      border: 1px solid black;
+      display: block; 
+      margin-bottom: 1.5rem;
+      align-self: center;
+  }
+  
+  
+  .newsletter > h1 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
+      width: 100%;
+  }
+  
+  .newsletter > h2 {
+    margin-top: 1.5rem;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .newsletter > form {
+    text-align: left;
+    margin-top: 1 rem;
+  }
+  
+  .newsletter .newsletterConsent {
+    width: 100%;
+  }
+  
+  .newsletter .checkbox {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .newsletter .newsletterButton {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    margin-top: 1rem;
+    width: auto;
+    text-align: left;
+    outline: none;
+    border: none;
+  }
+  
+  @media (min-width: 769px) {  /* Vi behöver förmodligen fler breakpoints */
+    .newsletter {
+      flex-direction: row-reverse;
+      height: auto;
+      width: 83vw;
+      margin: 0; 
+      padding: 0;
+      align-items: stretch;
+    }
+  
+    .newsletter .newsletterImage {
+      height: 100%;
+      margin-bottom: 0; 
+      align-self: stretch;
+    }
+  
+    .newsletter .formwrapper {
+      flex: 1;
+      margin-right: 5rem;
+      margin-left: 6rem;    
+      margin-top: 2rem;
+      overflow: hidden; 
+      word-wrap: break-word; 
+      max-width: 100%; 
+    }
+  
+    .newsletter > h1 {
+      text-align: left;
+    }
+  
+    .newsletter > h2 {
+      text-align: left;
+    }
+  
+    .newsletter > form {
+      text-align: left;
+    }
+  }
