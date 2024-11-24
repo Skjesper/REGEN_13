@@ -6,6 +6,7 @@
   
   .collageContent {
     margin-top: 3.5rem;
+    width: 87.5rem;
   }
   /* Gör varje item kvadratisk och fyller cellen */
   .collageContent .item {
@@ -17,6 +18,7 @@
     margin: 0 10rem;
     margin-top: 8.75rem;
   }
+
 
   @media (max-width: 768px) {
     .collageContent {
