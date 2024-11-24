@@ -15,6 +15,9 @@ header {
   .leftNav {
     display: flex;
     margin-left: 5rem;
+
+    height: auto;
+    object-fit: contain;
     
   }
   
