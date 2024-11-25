@@ -91,7 +91,7 @@ body {
   .slide img {
     display: block;
     width: 100%; /* Sträck bilden över hela förälderns bredd */
-    height: 100%; /* Sträck bilden över hela förälderns höjd */
+    height: 100%; 
     object-fit: cover; /* Visa hela bilden utan att beskära */
     object-position: center; /* Centrera bilden inom föräldern */
     padding: 1rem;

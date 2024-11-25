@@ -87,8 +87,15 @@
   }
 
   .ctaHeading {
-    width: 100%;
+   display: none;
   }
+
+  .ctaHeadingMobile {
+    width: 100%;
+    text-align: center;
+  }
+
+  
 
   .ctaTextBlock {
     width: 100%;
