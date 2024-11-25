@@ -73,6 +73,9 @@
     margin-top: 1.5rem;
   }
 
+  .ctaHeadingMobile {
+    display: none;
+  }
 
 @media (max-width: 768px) {
 
