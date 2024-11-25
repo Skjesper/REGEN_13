@@ -30,6 +30,10 @@
     font-size: var(--fs-p);
   }
 
+  a {
+    color: inherit;
+  }
+
   body {
     margin: 0;
     background-color: white;
