@@ -2,7 +2,6 @@
 /* Apply grid layout to the body and center all content vertically and horizontally */
 .sliderContainer {
     margin-top: 4.5rem;
-    height: 100vh; /* Set body height to 100% of the viewport height */
     width: auto;
     display: grid; /* Use grid layout for the body */
     place-items: center; /* Center all content both vertically and horizontally using grid alignment */
@@ -10,7 +9,6 @@
 
 .sliderText {
     display: flex;
-    width: 90%;
 }
 
 .sliderText p {
@@ -19,7 +17,7 @@
 
 /* The container for the image comparison */
 .comparisonContainer {
-    height: 44.8vw; /* Height set relative to the smaller viewport dimension (either width or height) */
+    height: 38rem; /* Height set relative to the smaller viewport dimension (either width or height) */
     width: 64vw; /* Width set relative to the smaller viewport dimension */
     position: relative; /* To allow absolute positioning of child elements */
     overflow: hidden; /* Hide any content that overflows the boundaries of the container */
@@ -54,13 +52,18 @@
     -webkit-appearance: none; /* Remove default thumb styling in WebKit browsers */
     height: 40px; /* Set thumb height */
     width: 40px; /* Set thumb width */
-    background: url("slider-icon.svg"), rgba(255,255,255,0.3); 
+    background-image: url("slider-icon.svg"), rgba(255,255,255,0.3); 
     /* Set the thumb background to an image (slider-icon.svg) with a semi-transparent white background */
     border: 3px solid #ffffff; /* White border around the thumb */
     border-radius: 50%; /* Make the thumb circular */
     background-size: contain; /* Ensure the background image fits within the thumb */
     cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+    
 }
+
+    @media (max-width: 1340px) {
+    }
+
 
 
     @media (max-width: 768px) {
@@ -89,6 +92,7 @@
             margin-right: 1.5rem;
             justify-content: space-around;
             padding-bottom: 2rem;
+            width: 90%;
         }
 
         .sliderText p {
