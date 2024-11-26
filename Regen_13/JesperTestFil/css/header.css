@@ -10,6 +10,14 @@ header {
   padding: 0 1rem; /* Lägg till inre marginaler för bättre layout */
 }
 
+.header-transparent {
+  background-color: rgba(255, 255, 255, 0.5); /* Halvtransparent bakgrund */
+  backdrop-filter: blur(10px); /* Ger frostat glas-effekt */
+  -webkit-backdrop-filter: blur(10px); /* För bättre stöd i Safari */
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lägg till en subtil skugga */
+}
+
 /* Navigation */
 .leftNav {
   display: flex;
