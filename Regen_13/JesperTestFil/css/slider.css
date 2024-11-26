@@ -71,6 +71,7 @@
 }
 
 
+
     @media (max-width: 768px) {
 
         .sliderContainer {
@@ -80,7 +81,7 @@
         }
 
         .comparisonContainer {
-            height: 100vw; /* Set height to match the viewport width (to maintain 1:1 ratio) */
+            height: 70vw; /* Set height to match the viewport width (to maintain 1:1 ratio) */
             width: 100vw; /* Set width to match the viewport width (to maintain 1:1 ratio) */
 
         }
