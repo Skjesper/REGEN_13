@@ -94,20 +94,10 @@
   @media (max-width: 1380px) {
     :root {
       --fs-xl: 5rem;
-      --fs-h3: 3rem;
+      --fs-h3: 4rem;
       --fs-p: 1.2rem;
     }
   }
-
-  @media (max-width: 1728px) {
-    :root {
-      --fs-xl: 7rem;
-      --fs-h3: 3rem;
-      --fs-p: 1.2rem;
-    }
-  }
-  
- 
    
   @media (max-width: 768px) {
     :root {
