@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  margin-top: 8.75rem;
     
   }
 
@@ -22,14 +23,14 @@
   .newsletterImage {
     max-width: 40%;
     max-height: 100%;
+    
   }
   
   .newsletterImage img {
   
   height: 100%;
-  object-fit: cover;
-  max-width: 100%; /* Säkerställer att den inte blir större än sin container */
-  max-height: 100%; /* Samma sak för höjden */
+  object-fit:fill;
+  
   }
   
   .formwrapper {

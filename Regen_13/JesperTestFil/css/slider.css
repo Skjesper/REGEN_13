@@ -17,8 +17,8 @@
 
 /* The container for the image comparison */
 .comparisonContainer {
-    height: 38rem; /* Height set relative to the smaller viewport dimension (either width or height) */
-    width: 64vw; /* Width set relative to the smaller viewport dimension */
+    height: 45rem; /* Height set relative to the smaller viewport dimension (either width or height) */
+    min-width: 80%;
     position: relative; /* To allow absolute positioning of child elements */
     overflow: hidden; /* Hide any content that overflows the boundaries of the container */
 }

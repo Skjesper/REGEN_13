@@ -20,6 +20,7 @@
 .ctaHeading {
   text-align: center;
   width: 80%;
+  margin-bottom: 1rem;
 }
 
 /* CTA Box */
@@ -28,7 +29,6 @@
   justify-content: space-between; /* Ger avstånd mellan textblock och bild */
   align-items: center; /* Centrerar innehållet vertikalt */
   width: 80%; /* Anpassad bredd */
-  height: fit-content; /* Fast höjd */
   background-color: var(--main-purple);
   padding: 2rem;
   gap: 1rem;
@@ -37,6 +37,8 @@
 
 .ctaTextBlock {
   width: 50%;
+  display: flex;
+  flex-direction: column;
   
 }
 .ctaTextBlock p {
@@ -47,14 +49,15 @@
  /* CTA Image */
 .imgContent {
   width: 50%; /* Bilddelen tar resterande bredd */
-  height: 100%; /* Fyller hela höjden */
+  max-height: 450px; /* Fyller hela höjden */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
 }
 
 .imgContent img {
-  max-height: 100%; /* Anpassar bildens höjd */
+  max-height: 664px; /* Anpassar bildens höjd */
   width: auto; /* Behåller proportionerna */
   display: block;
 }
