@@ -73,6 +73,11 @@
     margin-top: 1.5rem;
   }
 
+  .ctaHeadingMobile {
+    display: none;
+  }
+
+  
 
 @media (max-width: 768px) {
 
@@ -80,15 +85,23 @@
     width: calc(100% - 3rem);
     padding: 0;
     flex-direction: column-reverse;
-    height: 80vh;
+    height: 90vh;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 
   }
 
   .ctaHeading {
-    width: 100%;
+   display: none;
   }
+
+  .ctaHeadingMobile {
+    display: block; /* Visa mobilrubriken endast i mobilvyn */
+    width: 100%;
+    text-align: center;
+  }
+
+  
 
   .ctaTextBlock {
     width: 100%;

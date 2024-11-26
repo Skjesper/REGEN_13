@@ -1,39 +1,44 @@
+
+.collage {
+  padding: 0 10rem;
+  margin-top: 8.7rem;
+}
+
 .collageContent {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Anpassar sig och skapar så många kolumner som möjligt */
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumner på desktop */
+  gap: 1rem;
+  max-width: 1600px; /* Begränsa bredden på grid */
+  margin: 3.5rem auto; /* Centrerar griden */
+  height: 100%;
+}
+
+.collageContent img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Ger bilderna rundade hörn */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1040px) {
+  .collage {
+    padding: 0 5rem;
   }
-  
-  .collageContent {
-    margin-top: 3.5rem;
-    width: 87.5rem;
-  }
-  /* Gör varje item kvadratisk och fyller cellen */
-  .collageContent .item {
-    width: 100%; /* Gör att varje item fyller hela bredden av sin cell */
-    object-fit: cover; /* Ser till att bilden fyller sin container utan att ändra proportioner */
-  }
+}
+
+@media (max-width: 768px) {
 
   .collage {
-    margin: 0 10rem;
-    margin-top: 8.75rem;
+    padding: 0 2rem;
   }
 
-
-  @media (max-width: 768px) {
-    .collageContent {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Sätt alltid 2 kolumner på mobilen */
-        gap: 10px;
-        margin: 0 2rem; /* Minska marginalerna för mobil */
-    }
-
-    .collage {
-        margin: 0 2rem; /* Mindre marginaler på mobil */
-        margin-top: 5rem; /* Justera toppmarginalen på mobil */
-    }
-
-    .collageHeading h1 {
-     display: none;
-    } 
+  .collageContent {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolumner på mobil */
+    
+  }
+  .collageHeading h1 {
+    display: none;
+   } 
 }
+
+

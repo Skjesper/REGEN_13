@@ -66,11 +66,10 @@ body {
 *, *::before, *::after {
     box-sizing: border-box;
   }
-  
 
   .carousel {
     width: 80vw;
-    height: 50vh;
+    height: 60vh;
     position: relative;
     margin: auto;
   }
@@ -89,12 +88,13 @@ body {
     transition: 200ms opacity ease-in-out;
   }
   
-  .slide > img {
+  .slide img {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
+    width: 100%; /* Sträck bilden över hela förälderns bredd */
+    height: 100%; 
+    object-fit: cover; /* Visa hela bilden utan att beskära */
+    object-position: center; /* Centrera bilden inom föräldern */
+    padding: 1rem;
   }
   
   .slide[data-active] {
@@ -157,6 +157,11 @@ body {
           
           .carousel-button.next {
             right: -1.5rem;
+          }
+
+          .carousel {
+            width: 80vw;
+            height: 30vh;
           }
     
     }
