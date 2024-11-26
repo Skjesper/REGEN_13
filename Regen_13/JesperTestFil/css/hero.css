@@ -23,7 +23,11 @@
     width: 60%;
   }
 
-  .heroTextBlock h3, p {
+  .heroTextBlock h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .heroTextBlock p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
 
