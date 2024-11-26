@@ -102,6 +102,7 @@
     display: block; /* Visa mobilrubriken endast i mobilvyn */
     width: 100%;
     text-align: center;
+    padding-top: 1rem;
   }
 
   
