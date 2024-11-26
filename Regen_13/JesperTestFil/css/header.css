@@ -21,16 +21,31 @@ header {
 /* Navigation */
 .leftNav {
   display: flex;
-  margin-left: 5rem;
   margin-left: 10rem;
+  position: relative;
 }
 
-.leftNav img {
-  max-width: 100%;
-  height: auto;
+.logo-default,
+.logo-hover {
+  transition: opacity 0.3s ease;
+  max-width: 200px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
   object-fit: contain;
 }
+.logo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
 
+.leftNav:hover .logo-default {
+  opacity: 0;
+}
+
+.leftNav:hover .logo-hover {
+  opacity: 1;
+}
 .middleNav ul {
   list-style: none;
   display: flex;
@@ -63,6 +78,11 @@ header {
 .regenLogoMobileCentered {
     display: none; /* Dölj mobilkomponenter */
 }
+
+
+
+
+  
 
 
 

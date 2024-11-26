@@ -21,6 +21,9 @@
     font-family: Poppins;
 }
 
+
+
+
 /* The container for the image comparison */
 .comparisonContainer {
     height: 45rem; /* Height set relative to the smaller viewport dimension (either width or height) */
@@ -67,10 +70,6 @@
     
 }
 
-    @media (max-width: 1340px) {
-    }
-
-
 
     @media (max-width: 768px) {
 
@@ -93,12 +92,14 @@
             object-fit: cover; /* Make sure the image fills the container without stretching or squishing */
         }
 
+
         .sliderText {
             margin-left: 1.5rem;
             margin-right: 1.5rem;
-            justify-content: space-around;
+            padding: 0 0;
             padding-bottom: 2rem;
             width: 90%;
+            
         }
 
         .sliderText p {
