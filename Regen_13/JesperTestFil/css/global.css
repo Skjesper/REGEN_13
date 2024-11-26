@@ -22,7 +22,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 4px solid lime !important;
+    /* outline: 4px solid lime !important; */
   }
   
   ul {
