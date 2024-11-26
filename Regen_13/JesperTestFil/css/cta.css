@@ -116,5 +116,6 @@
     .imgContent {
     width: 90%;
     height: auto;
+    padding-top: 1rem;
   }
 }
