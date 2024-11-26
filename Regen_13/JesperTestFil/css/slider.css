@@ -7,6 +7,7 @@
     place-items: center; /* Center all content both vertically and horizontally using grid alignment */
 }
 
+
 .sliderText {
     display: flex;
     width: 80%;
@@ -70,17 +71,22 @@
     
 }
 
+.comparisonButton {
+    display: flex;
+    align-items: left;
+    width: 80%;
+}
+
 .sliderButton {
     border-radius: 70px;
     border: none;
     width: 6rem;
-    height: 3rem;
+    height: 2.7rem;
     margin: 0;
     cursor: pointer;
     font-weight: 700;
     font-size: 0.9rem;
     font-family: IBM Plex Sans;
-    margin-top: 1.5rem;
     color: white;
     background-color: black;
   }
@@ -92,7 +98,7 @@
         .sliderContainer {
             margin-top: 2rem;
             height: 25rem;
-            justify-items: start
+           
             
         }
 
@@ -107,6 +113,11 @@
             width: 100%; /* Ensure image width is 100% of the container */
             height: 100%; /* Ensure image height is 100% of the container */
             object-fit: cover; /* Make sure the image fills the container without stretching or squishing */
+        }
+
+        .comparisonButton {
+            margin-top: 1.5rem;
+            width: 85%;
         }
 
 
@@ -125,9 +136,7 @@
             
         }
 
-        .sliderButton {
-            margin-left: 2rem;
-        }
+        
     }
 
    

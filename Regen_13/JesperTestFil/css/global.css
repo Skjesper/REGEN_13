@@ -91,6 +91,7 @@
     :root {
       --fs-xl: 3rem;
       --fs-h3: 2rem;
+      --fs-h2: 3rem;
       --fs-p: 1.2rem;
     }
   }
@@ -99,9 +100,11 @@
     :root {
       --fs-xl: 5rem;
       --fs-h3: 4rem;
+      --fs-h2: 4.5rem;
       --fs-p: 1.2rem;
     }
   }
+
    
   @media (max-width: 768px) {
     :root {
