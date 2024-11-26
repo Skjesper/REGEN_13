@@ -33,7 +33,7 @@
   }
 
   .collageContent {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolumner på mobil */
+    grid-template-columns: repeat(1, 1fr); /* 2 kolumner på mobil */
     
   }
   .collageHeading h1 {

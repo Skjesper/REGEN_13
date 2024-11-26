@@ -28,7 +28,7 @@
   justify-content: space-between; /* Ger avstånd mellan textblock och bild */
   align-items: center; /* Centrerar innehållet vertikalt */
   width: 80%; /* Anpassad bredd */
-  height: 60vh; /* Fast höjd */
+  height: fit-content; /* Fast höjd */
   background-color: var(--main-purple);
   padding: 2rem;
   gap: 1rem;
@@ -85,9 +85,9 @@
     width: calc(100% - 3rem);
     padding: 0;
     flex-direction: column-reverse;
-    height: 90vh;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    height: fit-content;
 
   }
 
@@ -110,6 +110,7 @@
 
 
     .imgContent {
-    width: 70%;
+    width: 90%;
+    height: auto;
   }
 }
