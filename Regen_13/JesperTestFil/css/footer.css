@@ -2,58 +2,47 @@
   font-weight: 700;
   font-family: 'IBM Plex Sans'; 
   color: var(--bgcolor-white);
-  font-size: 1rem;
+  font-size: var(--fs-p);
 }
 
 .footer_content li {
-  margin-top: 1rem; /* Ger mellanrum mellan varje rad i listan */
+  margin-top: 0.5rem; /* Ger mellanrum mellan varje rad i listan */
   color: var(--bgcolor-white);
   font-weight: 300;
-  font-size: 1rem;
-  
-
 }
 
-
-
-
-
 .footer_container {
-  
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   background-color: var(--footer);
   width: 100%;
-  height: 39.375rem;
   margin-top: 6.75rem;
-  padding: 3rem;
-  
 }
 
 .footer_section {
   padding: 1.5rem;
   text-align: left;
-  height: 100%
-  
-  
 }
 
 .footer_content.socials {
   display: flex;
-  
 }
 
 .footer_content.socials img {
   margin-right: 1rem;
   max-height: 1.5rem;
-  
 }
 
 .paymentMethods {
   display: flex;
-  width: 100%;
-  height: 3rem;
+  justify-content: flex-end; 
+  gap: 1.5rem; 
+  grid-column: 1 / -1; 
+  grid-row: 2;
+  padding-right: 3.5rem; 
+  padding-bottom: 3.5rem;
+  margin-top: 4.5rem; 
 }
 
 
@@ -63,13 +52,25 @@
       grid-template-columns: 1fr;
       grid-template-rows: repeat(5, auto);
       gap: 1rem;
-      padding: 1rem;
-      
+      padding: 1rem;   
   }
 
   .footer_section {
       width: 100%;
       padding: 1.5rem;
+  }
+
+  .paymentMethods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 4.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 7rem;
+    grid-column: 1 / -1; 
+    grid-row: 6;
   }
 
 } 
