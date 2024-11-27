@@ -29,11 +29,6 @@
     user-select: none;
 }
 
-.information {
-    width: 100vw;
-    height: 50vh;
-    background-color: rgb(38, 0, 255);
-}
 
 .dropdown ul {
     font-size: 2.5rem;
