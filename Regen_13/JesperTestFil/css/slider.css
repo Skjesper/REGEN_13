@@ -93,6 +93,17 @@
     background-color: black;
   }
 
+  .divider {
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    width: 2px; 
+    background-color: #fff; 
+    left: 50%;
+    pointer-events: none; 
+}
+
+
 
 
     @media (max-width: 768px) {

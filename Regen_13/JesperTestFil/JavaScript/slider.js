@@ -4,6 +4,8 @@ function slide(){
     console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
 }
 
+
+
 // Step-by-Step Explanation:
 
 //     Retrieve the current value of the slider:
