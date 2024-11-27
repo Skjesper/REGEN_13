@@ -2,15 +2,21 @@
   font-weight: 700;
   font-family: 'IBM Plex Sans'; 
   color: var(--bgcolor-white);
-  font-size: var(--fs-p);
+  font-size: 1rem;
 }
 
 .footer_content li {
-  margin-top: 0.5rem; /* Ger mellanrum mellan varje rad i listan */
+  margin-top: 1rem; /* Ger mellanrum mellan varje rad i listan */
   color: var(--bgcolor-white);
   font-weight: 300;
+  font-size: 1rem;
+  
 
 }
+
+
+
+
 
 .footer_container {
   
@@ -19,12 +25,18 @@
   gap: 2rem;
   background-color: var(--footer);
   width: 100%;
+  height: 39.375rem;
   margin-top: 6.75rem;
+  padding: 3rem;
+  
 }
 
 .footer_section {
   padding: 1.5rem;
   text-align: left;
+  height: 100%
+  
+  
 }
 
 .footer_content.socials {
@@ -36,6 +48,12 @@
   margin-right: 1rem;
   max-height: 1.5rem;
   
+}
+
+.paymentMethods {
+  display: flex;
+  width: 100%;
+  height: 3rem;
 }
 
 
