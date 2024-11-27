@@ -110,6 +110,7 @@
     width: 100%;
     text-align: center;
     padding-top: 1rem;
+    
   }
 
 
@@ -119,6 +120,10 @@
   .ctaTextBlock {
     width: 100%;
     padding: 1.5rem 1.5rem;
+}
+
+.ctaTextBlock p {
+  margin-top: 2rem;
 }
 
 .ctaTextBlockTop {
