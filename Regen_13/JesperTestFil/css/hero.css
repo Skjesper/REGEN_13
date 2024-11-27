@@ -62,7 +62,7 @@
       position: absolute;
       top: 30%;
       left: 5%;
-      transform: translateY(-50%);
+      transform: none;
       text-align: left;
       color: white;
       width: 80%;
