@@ -121,7 +121,7 @@ color: rgb(255, 255, 255); /* Style the right arrow */
         
         top: 60%;
         transform: translateY(-60%);
-        width: calc(135% - 1rem);
+        width: 93vw;
         
     }
 
@@ -132,6 +132,7 @@ color: rgb(255, 255, 255); /* Style the right arrow */
     .sofa-selector {
         width: 40px;
         height: 40px;
+        margin: 0 0;
     }
 
     .carousel-container {

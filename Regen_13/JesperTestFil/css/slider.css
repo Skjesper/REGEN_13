@@ -60,11 +60,11 @@
 /* Style for the slider thumb (the draggable part of the slider) */
 #slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Remove default thumb styling in WebKit browsers */
-    height: 40px; /* Set thumb height */
-    width: 40px; /* Set thumb width */
-    background-image: url("slider-icon.svg"), rgba(255,255,255,0.3); 
-    /* Set the thumb background to an image (slider-icon.svg) with a semi-transparent white background */
-    border: 3px solid #ffffff; /* White border around the thumb */
+    height: 25px; /* Set thumb height */
+    width: 25px; /* Set thumb width */
+    /* background-color: rgba(255, 255, 255, 1); */
+    background-image: url("../Assets/Slider/slider_.png"), rgba(255,255,255,0.3); 
+    border: 3px solid #ffffff;
     border-radius: 50%; /* Make the thumb circular */
     background-size: contain; /* Ensure the background image fits within the thumb */
     cursor: pointer; /* Change cursor to pointer to indicate interactivity */
@@ -96,7 +96,7 @@
     position: absolute;
     top: 0; 
     bottom: 0; 
-    width: 2px; 
+    width: 3px; 
     background-color: #fff; 
     left: 50%;
     pointer-events: none; 

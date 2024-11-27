@@ -39,7 +39,9 @@
   body {
     margin: 0;
     background-color: white;
+    overflow-x: hidden;
   }
+  
   
   /* General Element Styles */
   img {
