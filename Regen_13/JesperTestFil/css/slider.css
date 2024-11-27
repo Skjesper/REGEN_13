@@ -75,6 +75,8 @@
     display: flex;
     align-items: left;
     width: 80%;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .sliderButton {
@@ -116,8 +118,9 @@
         }
 
         .comparisonButton {
-            margin-top: 1.5rem;
+            
             width: 85%;
+            padding-left: 0;
         }
 
 
