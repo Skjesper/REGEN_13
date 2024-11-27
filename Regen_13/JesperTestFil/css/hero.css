@@ -22,6 +22,16 @@
     color: white;
     width: 60%;
   }
+
+  .heroTextBlock h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .heroTextBlock p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+
   
   /* Design Button */
   .designButton {
@@ -52,7 +62,7 @@
       position: absolute;
       top: 30%;
       left: 5%;
-      transform: translateY(-50%);
+      transform: none;
       text-align: left;
       color: white;
       width: 80%;

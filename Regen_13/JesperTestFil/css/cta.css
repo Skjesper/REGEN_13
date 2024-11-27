@@ -20,6 +20,12 @@
 .ctaHeading {
   text-align: center;
   width: 80%;
+  margin-bottom: 1rem;
+  
+}
+
+.ctaTextBlockTop {
+  line-height: 80px;
 }
 
 /* CTA Box */
@@ -28,33 +34,37 @@
   justify-content: space-between; /* Ger avstånd mellan textblock och bild */
   align-items: center; /* Centrerar innehållet vertikalt */
   width: 80%; /* Anpassad bredd */
-  height: 60vh; /* Fast höjd */
   background-color: var(--main-purple);
-  padding: 2rem;
+  padding-left: 3rem;
   gap: 1rem;
   flex-direction: row;
+  height: fit-content;
 }
 
 .ctaTextBlock {
   width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
   
 }
 .ctaTextBlock p {
-  margin-top: 1rem;
+  margin-top: 3rem;
+  color: black;
 }
 
 
  /* CTA Image */
 .imgContent {
   width: 50%; /* Bilddelen tar resterande bredd */
-  height: 100%; /* Fyller hela höjden */
+  max-height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .imgContent img {
-  max-height: 100%; /* Anpassar bildens höjd */
+  max-height: 580px; /* Anpassar bildens höjd */
   width: auto; /* Behåller proportionerna */
   display: block;
 }
@@ -85,9 +95,9 @@
     width: calc(100% - 3rem);
     padding: 0;
     flex-direction: column-reverse;
-    height: 90vh;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    height: fit-content;
 
   }
 
@@ -99,7 +109,10 @@
     display: block; /* Visa mobilrubriken endast i mobilvyn */
     width: 100%;
     text-align: center;
+    padding-top: 1rem;
   }
+
+
 
   
 
@@ -108,8 +121,14 @@
     padding: 1.5rem 1.5rem;
 }
 
+.ctaTextBlockTop {
+  line-height: 40px;
+}
+
 
     .imgContent {
-    width: 70%;
+    width: 90%;
+    height: auto;
+    padding-top: 1rem;
   }
 }

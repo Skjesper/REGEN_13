@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/forestsofa.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/collage.css">
-    <link rel="stylesheet" href="./css/carousel2.css">
+    <link rel="stylesheet" href="./css/carusell.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/meny-slider.css">
     <link rel="stylesheet" href="./css/meny-slider-desktop.css">
@@ -24,11 +24,15 @@
 </head>
 <body>
     <header>
-        <div class="leftNav">
-          <img src="../JesperTestFil/Assets/Regen_logo.svg">
-          <button class="headerButtonMobile"><img src="../JesperTestFil/Assets/burger_meny.svg">
+      <div class="leftNav">
+        <img src="../JesperTestFil/Assets/Regen_State_Default_black.svg" class="logo-default">
+        <img src="../JesperTestFil/Assets/Regen_logo_hover_black.svg" class="logo-hover">
+    
+    
+        <button class="headerButtonMobile"><img src="../JesperTestFil/Assets/burger_meny.svg">
             <span>Meny</span>
-          </button>
+        </button>
+    </div>
           
 <!-- Slide-in-meny -->
 <div class="slide-menu-mobile">
@@ -91,7 +95,7 @@
               </section>
               <section class="heroTextBlock">
                 <!-- <h2>ReGen</h2> -->
-                <h3>Framtiden är mjuk!</h3>
+                <h2>Framtiden är mjuk!</h2>
                 <p>Skräddarsydd komfort! Designad av dig, drivet av teknik, skapat för planeten.</p>
                 <button class="designButton">DESIGNA DIN SOFFA</button>
               </section>
@@ -101,16 +105,21 @@
                   <h1 class="ctaHeading">Se soffan hos dig!</h1>
                   <div class="ctaBox">
                     <div class="ctaTextBlock">
+                      <div class="ctaTextBlockTop">
                       <h3>Skanna ditt rum och få 20% rabatt</h3>
+                    </div>
+                    <div class="ctaTextBlockBottom">
                       <p>Vår AI analyserar rummets färgpalett och rekommenderar lämpliga färger, tyger och storlekar.</p>
                       <button class="scanButton">SKANNA</button>
                     </div>
+                  </div>
                     <div class="imgContent">
-                      <img src="../JesperTestFil/Assets/mockup_mobile_cta.png" alt="CTA Image">
+                      <img src="../JesperTestFil/Assets/cta_final.png" alt="CTA Image">
                     </div>
                     <h1 class="ctaHeadingMobile">Se soffan hos dig!</h1>
                   </div>
                 </div>
+
               </section>
 
               <section class="models">
@@ -149,6 +158,112 @@
                         <h3>FÅ HJÄLP AV AI</h3>
                       </div>
                       <p>Skanna ditt rum och låt vår AI matcha soffans klädsel med din stil och färg.</p>
+
+              </div>
+              <div class="models">
+                <h3>Populära modeller</h3></div>
+                <div class="carousel-container">
+                  <div class="sofa-display">
+                      <!-- Sofa 1 Images -->
+                      <img src="../JesperTestFil/Assets/modeller/earthfuzz.png" 
+                           class="sofa-image sofa-1-material-1" 
+                           data-sofa="1" 
+                           data-material="1">
+                      <img src="../JesperTestFil/Assets/modeller/greendenim.png" 
+                           class="sofa-image sofa-1-material-2 hidden" 
+                           data-sofa="1" 
+                           data-material="2">
+                      <img src="../JesperTestFil/Assets/modeller/palesoft.png" 
+                           class="sofa-image sofa-1-material-3 hidden" 
+                           data-sofa="1" 
+                           data-material="3">
+          
+                      <!-- Sofa 2 Images -->
+                      <img src="../JesperTestFil/Assets/modeller/earthlader.png" 
+                           class="sofa-image sofa-2-material-1 hidden" 
+                           data-sofa="2" 
+                           data-material="1">
+                      <img src="../JesperTestFil/Assets/modeller/greentyg.png" 
+                           class="sofa-image sofa-2-material-2 hidden" 
+                           data-sofa="2" 
+                           data-material="2">
+                      <img src="../JesperTestFil/Assets/modeller/paletyg.png"
+                           class="sofa-image sofa-2-material-3 hidden" 
+                           data-sofa="2" 
+                           data-material="3">
+                     
+               
+          
+                      <!-- Sofa 3 Images -->
+                      <img src="../JesperTestFil/Assets/modeller/earthvelvet.png" 
+                           class="sofa-image sofa-3-material-1 hidden" 
+                           data-sofa="3" 
+                           data-material="1">
+                      <img src="../JesperTestFil/Assets/modeller/greenvelvet.png"
+                           class="sofa-image sofa-3-material-2 hidden" 
+                           data-sofa="3" 
+                           data-material="2">
+                      <img src="../JesperTestFil/Assets/modeller/palevelvet.png"
+                           class="sofa-image sofa-3-material-3 hidden" 
+                           data-sofa="3" 
+                           data-material="3">
+                  </div>
+          
+                  <div class="sofa-nav-container">
+                      <div class="sofa-selector previous" data-direction="previous">←</div>
+                      <div class="sofa-selector next" data-direction="next">→</div>
+                  </div>
+          
+                  <div class="material-selector">
+                      <div class="material-btn active" data-material="1" style="background-color: #8B4513;"></div>
+                      <div class="material-btn" data-material="2" style="background-color: #708090;"></div>
+                      <div class="material-btn" data-material="3" style="background-color: #EEE5D6"></div>
+                  </div>
+              </div>
+            </div>
+                    <section class="aboutRegen">
+                        <div class="aboutContent">
+                          
+                            <div class="aboutText">
+                              <img class="aboutIcon" src="../JesperTestFil/Assets/scissors.svg">
+                              <div class="aboutHeading">
+                                <h3>SKRÄDDARSYDD</h3>
+                              </div>
+                              <p>Varje ReGen-soffa är unik, återvunnen och skräddarsydd för ditt hem.</p>
+                            </div>
+                           
+                            <div class="aboutText">
+                              <img class="aboutIcon" src="../JesperTestFil/Assets/smile.svg">
+                              <div class="aboutHeading">
+                                <h3>FÅ HJÄLP AV AI</h3>
+                              </div>
+                          
+                              <p>Skanna ditt rum och låt vår AI matcha soffans klädsel med din stil och färg.</p>
+                            </div>
+                           
+                            <div class="aboutText">
+                              <img class="aboutIcon" src="../JesperTestFil/Assets/thumbs up.svg">
+                              <div class="aboutHeading">
+                                <h3>ENKEL SKÖTSEL</h3>
+                              </div>
+                              <p>ReGen vårdprodukter är färganpassade och förlänger soffans livslängd.</p>
+                            </div>
+                            
+                            <div class="aboutText">
+                              <img class="aboutIcon" src="../JesperTestFil/Assets/refresh-cw.svg">
+                              
+                              <div class="aboutHeading">
+                                <h3>CIRKULÄRT</h3>
+                              </div>
+                              <p>Återvinn din ReGen-soffa – ge materialen nytt liv i framtida möbler.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="forestSofa">
+                        <img class="forestSofaImg" src="../JesperTestFil/Assets/Forest sofa_WEB 4k.jpg" alt="Soffa">
+                        <div class="forestSofaText">
+                            <h2>Ta hand om planeten!</h2>
+
                     </div>
                     <div class="aboutText">
                       <img class="aboutIcon" src="../JesperTestFil/Assets/thumbs up.svg">
@@ -167,6 +282,7 @@
                   </div>
               </section>  
 
+
               <section class="forestSofa">
                   <img class="forestSofaImg" src="../JesperTestFil/Assets/Forest sofa_WEB 4k.jpg" alt="Soffa">
                   <div class="forestSofaText">
@@ -184,6 +300,22 @@
                     <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
                 </div>
             </section>
+
+            <div class="sliderContainer">
+              <div class="sliderText">
+                <p>Vad du ser</p><p>Vad vi ser</p>
+              </div>
+              <div class="comparisonContainer">
+                  <img src="../JesperTestFil/Assets/Soffa_slider/SLIDER_TRASH.jpg">
+                  <img id="my-img" src="../JesperTestFil/Assets/Soffa_slider/SLIDER_SOFA.jpg">
+                  <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+              </div>
+              <div class="comparisonButton">
+                <button class="sliderButton">LÄS MER</button>
+              </div>
+              
+          </div>
+
             
             <section class="collage">
                 <div class="collageHeading">
@@ -199,7 +331,7 @@
                     <div class="item">
                       <img src="../JesperTestFil/Assets/Soffistikera/SOFFISTIKERA SPRAY WHITE.jpg" alt="Collage image 1">
                     </div>
-                    <div class="item">
+                    <!-- <div class="item">
                       <img src="../JesperTestFil/Assets/Soffistikera/SOFFISTIKERA SPRAY Beige.jpg" alt="Collage image 1">
                     </div>
                     <div class="item">
@@ -207,7 +339,12 @@
                     </div>
                     <div class="item">
                       <img src="../JesperTestFil/Assets/Soffistikera/SOFFISTIKERA SPRAY WHITE.jpg" alt="Collage image 1">
+
                     </div>
+
+                    </div> -->
+                  </div>
+
                 </div>
             </section>
 
@@ -215,6 +352,7 @@
                 <div class="newsletterImage">
                   <img src="./Assets/Placeholder_newsletter.jpg" alt = "sofa">
                 </div>
+
                 <div class="formwrapper">
                     <h4>Håll dig uppdaterad för mer inspiration och nyheter från oss!</h4>
                     <p>Mail:</p>
@@ -225,6 +363,18 @@
                               <input type="checkbox" id="consent" name="consent" required> 
                               <label for="consent">Genom att registrera dig samtycker du till att vi får kontakta dig via e-post med dina exklusiva MittReGen-förmåner, rabatter och erbjudanden samt inspirerande kampanjer och tävlingar.</label>
                             </div>
+
+                  <div class = "formwrapper">
+                    <h4>Håll dig uppdaterad för mer inspiration och nyheter från oss!</h4>
+                <p>Mail:</p>
+                <form>
+                      <input type="email" name="email" placeholder="namn@mail.com" required><br>
+                  
+                      <div class="newsletterConsent">
+                        <div class="checkbox">
+                          <input type="checkbox" id="consent" name="consent" required> 
+                          <label for="consent">Genom att registrera dig samtycker du till att vi får kontakta dig via e-post med dina exklusiva MittReGen-förmåner, rabatter och erbjudanden samt inspirerande kampanjer och tävlingar.</label>
+
                         </div>
                     </form>
                     <button class="newsletterButton">SKICKA!</button>
@@ -280,7 +430,7 @@
             <img src="../JesperTestFil/Assets/Logo+Hover_white.svg">
         </div>
     </footer>
-    <script src="../JesperTestFil/JavaScript/carousel2.js"></script>
+    <script src="../JesperTestFil/JavaScript/carusell.js"></script>
     <script src="../JesperTestFil/JavaScript/slider.js"></script>
     <script src="../JesperTestFil/JavaScript/meny-slider.js"></script>
     <script src="../JesperTestFil/JavaScript/meny-slider-desktop.js"></script>

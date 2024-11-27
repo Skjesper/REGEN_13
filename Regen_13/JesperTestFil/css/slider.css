@@ -7,18 +7,28 @@
     place-items: center; /* Center all content both vertically and horizontally using grid alignment */
 }
 
+
 .sliderText {
     display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 0 3rem;
+    padding-bottom: 1rem;   
 }
 
 .sliderText p {
     color:black;
+    font-size: 2rem;
+    font-family: Poppins;
 }
+
+
+
 
 /* The container for the image comparison */
 .comparisonContainer {
-    height: 38rem; /* Height set relative to the smaller viewport dimension (either width or height) */
-    width: 64vw; /* Width set relative to the smaller viewport dimension */
+    height: 45rem; /* Height set relative to the smaller viewport dimension (either width or height) */
+    min-width: 80%;
     position: relative; /* To allow absolute positioning of child elements */
     overflow: hidden; /* Hide any content that overflows the boundaries of the container */
 }
@@ -61,8 +71,27 @@
     
 }
 
-    @media (max-width: 1340px) {
-    }
+.comparisonButton {
+    display: flex;
+    align-items: left;
+    width: 80%;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.sliderButton {
+    border-radius: 70px;
+    border: none;
+    width: 6rem;
+    height: 2.7rem;
+    margin: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-family: IBM Plex Sans;
+    color: white;
+    background-color: black;
+  }
 
 
 
@@ -71,11 +100,12 @@
         .sliderContainer {
             margin-top: 2rem;
             height: 25rem;
+           
             
         }
 
         .comparisonContainer {
-            height: 100vw; /* Set height to match the viewport width (to maintain 1:1 ratio) */
+            height: 70vw; /* Set height to match the viewport width (to maintain 1:1 ratio) */
             width: 100vw; /* Set width to match the viewport width (to maintain 1:1 ratio) */
 
         }
@@ -87,12 +117,20 @@
             object-fit: cover; /* Make sure the image fills the container without stretching or squishing */
         }
 
+        .comparisonButton {
+            
+            width: 85%;
+            padding-left: 0;
+        }
+
+
         .sliderText {
             margin-left: 1.5rem;
             margin-right: 1.5rem;
-            justify-content: space-around;
+            padding: 0 0;
             padding-bottom: 2rem;
             width: 90%;
+            
         }
 
         .sliderText p {
@@ -100,6 +138,8 @@
             font-family: Poppins;
             
         }
+
+        
     }
 
    
