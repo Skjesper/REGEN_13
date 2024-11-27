@@ -1,0 +1,129 @@
+
+
+.models {
+    margin-top: 16rem;
+}
+
+
+.models h3 {
+   text-align: center; 
+   
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.sofa-display {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sofa-image {
+    max-width: 100%;
+    max-height: 180%;
+    
+    object-fit: contain;
+    object-position: center;
+    transition: opacity 0.5s ease;
+    position: absolute;
+}
+
+.sofa-image.hidden {
+    opacity: 0;
+    z-index: -1;
+}
+
+.sofa-nav-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.sofa-selector {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    pointer-events: auto;
+    margin: 0 20px;
+}
+
+.sofa-nav-container .sofa-selector[data-direction="previous"] {
+color: rgb(255, 255, 255); /* Style the left arrow */
+}
+
+.sofa-nav-container .sofa-selector[data-direction="next"] {
+color: rgb(255, 255, 255); /* Style the right arrow */
+}
+
+.sofa-selector:hover {
+    transform: scale(1.1);
+    
+}
+
+.material-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5rem;
+}
+
+.material-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+    
+}
+
+.material-btn:hover {
+    transform: scale(1.2);
+}
+
+.material-btn.active {
+    border: 3px solid #000000;
+}
+
+@media (max-width: 768px) {
+    .models {
+        margin-top: 6rem;
+    }
+
+    .material-selector {
+       
+        margin-top: 0;
+    }
+
+    .sofa-nav-container {
+        
+        top: 55%;
+        transform: translateY(-55%);
+        
+    }
+
+    .sofa-display {
+        height: 30vh;
+    }
+}

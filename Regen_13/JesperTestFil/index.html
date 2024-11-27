@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/forestsofa.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/collage.css">
-    <link rel="stylesheet" href="./css/carousel2.css">
+    <link rel="stylesheet" href="./css/carusell.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/meny-slider.css">
     <link rel="stylesheet" href="./css/meny-slider-desktop.css">
@@ -122,23 +122,64 @@
               </div>
               <div class="models">
                 <h3>Populära modeller</h3></div>
-              <section aria-label="Newest Photos">
-                <div class="carousel" data-carousel>
-                  <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-                  <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-                  <ul data-slides>
-                    <li class="slide" data-active>
-                      <img src="../JesperTestFil/Assets/modeller/beigesofa3.png" alt="Nature Image #1">
-                    </li>
-                    <li class="slide">
-                      <img src="../JesperTestFil/Assets/modeller/orangesofa2.png" alt="Nature Image #2">
-                    </li>
-                    <li class="slide">
-                      <img src="../JesperTestFil/Assets/modeller/dbluesofa1.png" alt="Nature Image #3">
-                    </li>
-                  </ul>
-                </div>
-              </section>
+                <div class="carousel-container">
+                  <div class="sofa-display">
+                      <!-- Sofa 1 Images -->
+                      <img src="../JesperTestFil/Assets/modeller/earthfuzz.png" 
+                           class="sofa-image sofa-1-material-1" 
+                           data-sofa="1" 
+                           data-material="1">
+                      <img src="../JesperTestFil/Assets/modeller/greendenim.png" 
+                           class="sofa-image sofa-1-material-2 hidden" 
+                           data-sofa="1" 
+                           data-material="2">
+                      <img src="../JesperTestFil/Assets/modeller/palesoft.png" 
+                           class="sofa-image sofa-1-material-3 hidden" 
+                           data-sofa="1" 
+                           data-material="3">
+          
+                      <!-- Sofa 2 Images -->
+                      <img src="../JesperTestFil/Assets/modeller/earthlader.png" 
+                           class="sofa-image sofa-2-material-1 hidden" 
+                           data-sofa="2" 
+                           data-material="1">
+                      <img src="../JesperTestFil/Assets/modeller/greentyg.png" 
+                           class="sofa-image sofa-2-material-2 hidden" 
+                           data-sofa="2" 
+                           data-material="2">
+                      <img src="../JesperTestFil/Assets/modeller/paletyg.png"
+                           class="sofa-image sofa-2-material-3 hidden" 
+                           data-sofa="2" 
+                           data-material="3">
+                     
+               
+          
+                      <!-- Sofa 3 Images -->
+                      <img src="../JesperTestFil/Assets/modeller/earthvelvet.png" 
+                           class="sofa-image sofa-3-material-1 hidden" 
+                           data-sofa="3" 
+                           data-material="1">
+                      <img src="../JesperTestFil/Assets/modeller/greenvelvet.png"
+                           class="sofa-image sofa-3-material-2 hidden" 
+                           data-sofa="3" 
+                           data-material="2">
+                      <img src="../JesperTestFil/Assets/modeller/palevelvet.png"
+                           class="sofa-image sofa-3-material-3 hidden" 
+                           data-sofa="3" 
+                           data-material="3">
+                  </div>
+          
+                  <div class="sofa-nav-container">
+                      <div class="sofa-selector previous" data-direction="previous">←</div>
+                      <div class="sofa-selector next" data-direction="next">→</div>
+                  </div>
+          
+                  <div class="material-selector">
+                      <div class="material-btn active" data-material="1" style="background-color: #8B4513;"></div>
+                      <div class="material-btn" data-material="2" style="background-color: #708090;"></div>
+                      <div class="material-btn" data-material="3" style="background-color: #EEE5D6"></div>
+                  </div>
+              </div>
             </div>
                     <section class="aboutRegen">
                         <div class="aboutContent">
@@ -298,7 +339,7 @@
             <img src="../JesperTestFil/Assets/Logo+Hover_white.svg">
         </div>
     </footer>
-    <script src="../JesperTestFil/JavaScript/carousel2.js"></script>
+    <script src="../JesperTestFil/JavaScript/carusell.js"></script>
     <script src="../JesperTestFil/JavaScript/slider.js"></script>
     <script src="../JesperTestFil/JavaScript/meny-slider.js"></script>
     <script src="../JesperTestFil/JavaScript/meny-slider-desktop.js"></script>
