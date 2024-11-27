@@ -29,6 +29,7 @@
 
   .heroTextBlock h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
   }
 
   .heroTextBlock p {
@@ -70,6 +71,11 @@
       text-align: left;
       color: white;
       width: 80%;
+    }
+
+    .heroTextBlock h2 {
+      line-height: 55px;
+      padding-bottom: 1rem;
     }
 
     .sofaHero.desktop {
