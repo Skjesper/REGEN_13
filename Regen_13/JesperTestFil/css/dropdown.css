@@ -1,0 +1,114 @@
+/* Dropdown Styling */
+.products {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    width: 100vw;
+    height: 65vh;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Keep hidden initially */
+    transform: translateY(-30px); /* Start slightly above */
+    z-index: 100;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Transition both opacity and transform */
+}
+
+.products.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scaleY(1);
+}
+
+/* Make the Produkter text clickable */
+.middleNav ul li:first-child {
+    cursor: pointer;
+    user-select: none;
+}
+
+.information {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(38, 0, 255);
+}
+
+.dropdown ul {
+    font-size: 2.5rem;
+    font-family: Poppins;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column; /* Vertikal layout */
+    justify-content: space-between; /* Lika mycket mellanrum mellan alla punkter */
+    height: 100%; /* Viktigt för att `space-between` ska fungera korrekt */
+}
+
+
+.dropdown li {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.middleNav ul li:first-child {
+    cursor: pointer;
+    user-select: none;
+  }
+
+ 
+
+  .information {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    width: 100vw;
+    height: 65vh;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Keep hidden initially */
+    transform: translateY(-30px); /* Start slightly above */
+    z-index: 100;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Transition both opacity and transform */
+}
+
+.information.show {
+    opacity: 1;  /* Fade in */
+    visibility: visible;  /* Make it visible */
+    transform: translateY(0);  /* Slide into place */
+}
+
+.middleNav ul li:nth-child(4) {
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.informationContent {
+    display: flex;
+    height: 100%;
+    gap: 5rem;
+}
+
+.informationContent ul {
+    font-size: 2.5rem;
+    font-family: Poppins;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column; /* Vertikal layout för listor */
+    justify-content: space-between; /* Jämnt mellan varje rad */
+    height: 100%; /* Viktigt för space-between att fungera */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Tar bort standardpunkterna */
+    width: 29.25rem;
+}
+
+.informationContent li {
+    display: flex;
+    justify-content: flex-start; /* Justera texten inuti varje listpunkt */
+}

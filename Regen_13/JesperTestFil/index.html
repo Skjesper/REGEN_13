@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/meny-slider.css">
     <link rel="stylesheet" href="./css/meny-slider-desktop.css">
     <link rel="stylesheet" href="./css/newestLetterStyle.css">
+    <link rel="stylesheet" href=".//css/dropdown.css">
     
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -74,6 +75,36 @@
             <li>Inspiration</li>
             <li>Information</li>
           </ul>
+        </div>
+        
+        <div class="products">
+          <div class="dropdown">
+            <ul>
+              <li>Omtyckta modeller</li>
+              <li>Klädsel</li>
+              <li>Gratis tygprover</li>
+              <li>Soffvård</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="information">
+          <div class="informationContent">
+            <ul>
+              <li>Hållbarhet</li>
+              <li>Material</li>
+              <li>Underhåll</li>
+              <li>Skötsel</li>
+            </ul>
+            <ul>
+              <li>Kundtjänst</li>
+              <li>Köpvillkor</li>
+              <li>Om oss</li>
+              <li>Karriär</li>
+            </ul>
+          </div>
+        </div>
+        
           <div class="regenLogoMobileCentered">
             <img src="../JesperTestFil/Assets/Regen_logo.svg">
           </div>
@@ -90,6 +121,7 @@
     </header>
     <main>
         <body>
+          <section>
             <div class="hero">
               <video class="sofaHero desktop" autoplay muted loop>
                 <source src="../JesperTestFil/Assets/Hero_web.LowRes.mp4" type="video/mp4">
@@ -99,11 +131,13 @@
                   </video>
               </div>
               <div class="heroTextBlock">
-                <!-- <h2>ReGen</h2> -->
                 <h2>Framtiden är mjuk!</h2>
                 <p>Skräddarsydd komfort! Designad av dig, drivet av teknik, skapat för planeten.</p>
                 <button class="designButton">DESIGNA DIN SOFFA</button>
               </div>
+            </section>
+
+            <section>
               <div class="cta">
                 <div class="ctaContent">
                   <h1 class="ctaHeading">Se soffan hos dig!</h1>
@@ -125,6 +159,9 @@
                   </div>
                 </div>
               </div>
+            </section>
+
+            <section>
               <div class="models">
                 <h3>Populära modeller</h3></div>
                 <div class="carousel-container">
@@ -186,6 +223,7 @@
                   </div>
               </div>
             </div>
+          </section>
                     <section class="aboutRegen">
                         <div class="aboutContent">
                           
@@ -224,6 +262,8 @@
                             </div>
                         </div>
                     </section>
+
+                  <section>
                     <div class="forestSofa">
                         <img class="forestSofaImg desktop" src="../JesperTestFil/Assets/Forest sofa_WEB 4k.jpg" alt="Soffa">
                         <img class="forestSofaImg mobile" src="../JesperTestFil/Assets/Forest_Device.jpg" alt="Soffa">
@@ -231,8 +271,10 @@
                             <h2>Ta hand om planeten!</h2>
                         </div>
                     </div>
-            </div>
-
+                  </div>
+                </section>
+          
+        <section>
             <div class="sliderContainer">
               <div class="sliderText">
                 <p>Vad du ser</p><p>Vad vi ser</p>
@@ -248,6 +290,9 @@
               </div>
               
           </div>
+        </section>
+
+        <section>
             
             <div class="collage">
                 <div class="collageHeading">
@@ -274,7 +319,9 @@
                   </div>
                 </div>
               </div>
+            </section>
 
+            <section>
               <div class="newsletter">
                 <div class="newsletterImage">
                   <img src="./Assets/Placeholder_newsletter.jpg" alt = "sofa">
@@ -296,6 +343,7 @@
               </div>
             </div>
           </div>
+        </section>
         </body>     
     </main>
     <footer class="footer_container">
@@ -361,5 +409,7 @@
     <script src="../JesperTestFil/JavaScript/meny-slider.js"></script>
     <script src="../JesperTestFil/JavaScript/meny-slider-desktop.js"></script>
     <script src="../JesperTestFil/JavaScript/header.js"></script>
+    <script src="../JesperTestFil/JavaScript/dropdown.js"></script>
+    <script src="../JesperTestFil/JavaScript/dropdown2.js"></script>
 </body>
 </html>

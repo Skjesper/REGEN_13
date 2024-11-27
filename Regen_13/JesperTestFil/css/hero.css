@@ -28,26 +28,28 @@
   }
 
   .heroTextBlock h2 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    line-height: 120px;
     
   }
 
   .heroTextBlock p {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
 
 
   
   /* Design Button */
   .designButton {
-    width: 160px;
-    height: 35px;
+    width: 11rem;
+    height: 3rem;
     border-radius: 40px;
     border: none;
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 0.8rem;
-    font-family: Poppins;
+    font-size: 0.95rem;
+    font-family: IBM Plex Sans;
     background-color: var(--textcolor-black);
     color: var(--bgcolor-white);
     cursor: pointer;
@@ -71,6 +73,10 @@
       text-align: left;
       color: white;
       width: 80%;
+    }
+
+    .heroTextBlock p {
+      font-size: 1rem;
     }
 
     .heroTextBlock h2 {

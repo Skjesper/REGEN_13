@@ -50,15 +50,15 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     pointer-events: none;
 }
 
 .sofa-selector {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -68,6 +68,7 @@
     transition: transform 0.3s, background-color 0.3s;
     pointer-events: auto;
     margin: 0 20px;
+    font-size: 2rem;
 }
 
 .sofa-nav-container .sofa-selector[data-direction="previous"] {
@@ -91,8 +92,8 @@ color: rgb(255, 255, 255); /* Style the right arrow */
 }
 
 .material-btn {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s, border 0.3s;
@@ -117,6 +118,11 @@ color: rgb(255, 255, 255); /* Style the right arrow */
         margin-top: 0;
     }
 
+    .material-btn {
+        width: 30px;
+        height: 30px;
+    }
+
     .sofa-nav-container {
         
         top: 60%;
@@ -132,6 +138,7 @@ color: rgb(255, 255, 255); /* Style the right arrow */
     .sofa-selector {
         width: 40px;
         height: 40px;
+        font-size: 1rem;
         margin: 0 0;
     }
 
