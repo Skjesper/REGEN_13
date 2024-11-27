@@ -21,6 +21,11 @@
   text-align: center;
   width: 80%;
   margin-bottom: 1rem;
+  
+}
+
+.ctaTextBlockTop {
+  line-height: 80px;
 }
 
 /* CTA Box */
@@ -30,13 +35,15 @@
   align-items: center; /* Centrerar innehållet vertikalt */
   width: 80%; /* Anpassad bredd */
   background-color: var(--main-purple);
-  padding: 2rem;
+  padding-left: 3rem;
   gap: 1rem;
   flex-direction: row;
+  height: fit-content;
 }
 
 .ctaTextBlock {
   width: 50%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   
@@ -49,15 +56,14 @@
  /* CTA Image */
 .imgContent {
   width: 50%; /* Bilddelen tar resterande bredd */
-  max-height: 450px; /* Fyller hela höjden */
+  max-height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
 }
 
 .imgContent img {
-  max-height: 664px; /* Anpassar bildens höjd */
+  max-height: 580px; /* Anpassar bildens höjd */
   width: auto; /* Behåller proportionerna */
   display: block;
 }
