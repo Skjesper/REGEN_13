@@ -23,3 +23,17 @@
     text-align: center; /* Centrerar texten horisontellt */
     width: 100%; /* Gör så att texten kan ta upp hela bredden */
 }
+
+.forestSofaImg.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .forestSofaImg.mobile {
+        display: block;
+    }
+
+    .forestSofaImg.desktop {
+        display: none;
+    }
+}
