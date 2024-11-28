@@ -1,11 +1,15 @@
 .hero {
-    padding-top: 6rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  padding-top: 6rem; /* Remove padding to avoid shifting */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; 
+
+}
+
   
   .sofaHero {
     width: 100%;
