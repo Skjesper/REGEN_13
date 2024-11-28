@@ -91,6 +91,12 @@
     color: white;
     background-color: black;
   }
+
+  .sliderButton:hover {
+    background-color: white;
+    color: black;
+  }
+
   .divider {
     position: absolute;
     top: 0; 

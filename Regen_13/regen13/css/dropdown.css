@@ -112,4 +112,8 @@
     .dropdown ul {
         font-size: 1.5rem;
     }
+
+    .informationContent ul {
+        font-size: 1.5rem; 
+    }
 }

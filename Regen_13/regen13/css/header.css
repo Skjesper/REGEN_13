@@ -57,10 +57,19 @@ header {
   display: flex;
   margin-right: 10rem;
   justify-content: space-between;
+
+}
+
+.rightNav:hover {
+  text-decoration: underline;
 }
 
 .headerButtonDesktop span {
   margin-top: 0.5rem;
+}
+
+.menuButtons button:hover span {
+  text-decoration: underline; /* Underline text on hover */
 }
 
 .headerButtonDesktop {
