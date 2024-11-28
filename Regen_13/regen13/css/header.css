@@ -50,6 +50,7 @@ header {
   list-style: none;
   display: flex;
   gap: 4rem;
+  cursor: pointer;
 }
 
 .rightNav {
