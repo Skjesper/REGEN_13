@@ -6,7 +6,7 @@
 }
 
 .footer_content li {
-  margin-top: 0.5rem; /* Ger mellanrum mellan varje rad i listan */
+  margin-top: 1.5rem; /* Ger mellanrum mellan varje rad i listan */
   color: var(--bgcolor-white);
   font-weight: 300;
 }

@@ -107,3 +107,9 @@
     display: flex;
     justify-content: flex-start; /* Justera texten inuti varje listpunkt */
 }
+
+@media (max-width: 1380px)  {
+    .dropdown ul {
+        font-size: 1.5rem;
+    }
+}
